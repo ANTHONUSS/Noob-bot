@@ -1,14 +1,12 @@
 package fr.anthonus.listeners;
 
 import fr.anthonus.LOGs;
-import fr.anthonus.utils.DatabaseManager;
-import fr.anthonus.utils.SettingsManager;
-import fr.anthonus.utils.User;
-import fr.anthonus.utils.UserManager;
+import fr.anthonus.utils.*;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberRemoveEvent;
+import net.dv8tion.jda.api.events.guild.member.update.GuildMemberUpdatePendingEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -33,8 +31,21 @@ public class JoinEventListener extends ListenerAdapter {
         removeUserFromMemory(event);
     }
 
+    @Override
+    public void onGuildMemberUpdatePending(GuildMemberUpdatePendingEvent event) {
+        if (!event.getNewPending()) {
+            // L'utilisateur a accepté les règles et est maintenant un membre actif
+            // Vous pouvez maintenant accéder à ses rôles et autres informations
+            long userId = event.getUser().getIdLong();
+            int userLevel = UserManager.users.get(userId).getLevel();
+            LevelManager.checkAndUpdateUserRole(userId, userLevel);
+            LOGs.sendLog("L'utilisateur " + event.getUser().getName() + " a accepté les règles et est maintenant un membre actif.", "WELCOME");
+        }
+    }
+
+
     private void sendWelcomeMessage(GuildMemberJoinEvent event) {
-        TextChannel joinChannelID = jda.getGuildById(guildId).getTextChannelById(SettingsManager.arrivalsChannel);
+        TextChannel joinChannel = guild.getTextChannelById(SettingsManager.arrivalsChannel);
 
         EmbedBuilder embedBuilder = new EmbedBuilder();
 
@@ -54,7 +65,9 @@ public class JoinEventListener extends ListenerAdapter {
             case 9 -> title = "Salut et bienvenue dans le serveur !";
         }
 
-        String description = "Salut " + event.getUser().getName() + " ! Installe toi confortablement et n'hésite pas à aller voir le <id:guide> pour comprendre le fonctionnement du serveur. (il y a pas mal de choses à lire, donc prends ton temps !).";
+        String description = "Salut " + event.getUser().getName() + " ! Installe toi confortablement et n'hésite pas à aller voir le <id:guide> !\n" +
+                "N'oublie surtout pas d'aller lire l'onglet \"ressources\" pour être conscient des fonctionnalités du serveur !\n" +
+                "(il y a pas mal de choses à lire, donc prends ta meilleur tasse de thé et prends ton temps de tout lire :upside_down: !).";
 
         //tests embeds
         embedBuilder.setTitle(title);
@@ -62,7 +75,7 @@ public class JoinEventListener extends ListenerAdapter {
         embedBuilder.setFooter("profite bien du serveur !");
         embedBuilder.setThumbnail(event.getUser().getAvatarUrl());
 
-        joinChannelID.sendMessage(event.getUser().getAsMention())
+        joinChannel.sendMessage(event.getUser().getAsMention())
                 .setEmbeds(embedBuilder.build())
                 .queue();
     }
@@ -85,7 +98,7 @@ public class JoinEventListener extends ListenerAdapter {
     }
 
     private void sendGoodbyeMessage(GuildMemberRemoveEvent event) {
-        TextChannel joinChannelID = jda.getGuildById(guildId).getTextChannelById(SettingsManager.arrivalsChannel);
+        TextChannel joinChannel = guild.getTextChannelById(SettingsManager.arrivalsChannel);
 
         EmbedBuilder embedBuilder = new EmbedBuilder();
 
@@ -113,7 +126,7 @@ public class JoinEventListener extends ListenerAdapter {
         embedBuilder.setDescription(description);
         embedBuilder.setThumbnail(event.getUser().getAvatarUrl());
 
-        joinChannelID.sendMessageEmbeds(embedBuilder.build()).queue();
+        joinChannel.sendMessageEmbeds(embedBuilder.build()).queue();
     }
 
     private void removeUserFromMemory(GuildMemberRemoveEvent event) {

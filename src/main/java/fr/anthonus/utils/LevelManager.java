@@ -1,0 +1,93 @@
+package fr.anthonus.utils;
+
+import fr.anthonus.LOGs;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.Role;
+
+import static fr.anthonus.Main.*;
+
+public class LevelManager {
+    private static int a = 75;
+    private static int b = 25;
+    private static int xp_per_msg = 10;
+    private static int xp_per_min_voice = 5;
+
+    /**
+     * Les niveaux à atteindre pour chaque palier (voir excel pour référence)
+     */
+    private static int[] paliersLevels = {0, 2, 5, 8, 20, 29, 49, 64, 79, 89, 100};
+    private static long[] paliersRoles = {1364222563546566696L, 1363255586464076036L, 1363258951021625404L, 1363258861607452900L, 1363258980515840210L, 1363259013277417572L, 1363259050497802365L,
+            1363259085163860110L, 1363259115677421729L, 1363259148585795806L, 1363259177828487310L};
+
+    public static int getXPforLevel(int level) {
+        return 75 * level * level + 25 * level;
+    }
+
+    public static int getLevelFromXP(int xp) {
+        double c = -xp;
+
+        double discriminant = b * b - 4 * a * c;
+
+        if (discriminant < 0)
+            return -1; // askip c'est impossible mais on sait jamais
+
+        double sqrtDiscriminant = Math.sqrt(discriminant);
+
+        double level = (-b + sqrtDiscriminant) / (2 * a);
+
+        return (int) Math.floor(level);
+    }
+
+    public static int getXPForLevelUp(int xp) {
+        return getXPforLevel(getLevelFromXP(xp) + 1) - xp;
+    }
+
+    public static void checkAndUpdateUserRole(long userId, int userLevel) {
+        // Trouver le rôle correspondant au niveau de l'utilisateur
+        Role correctRole = null;
+        for (int i = 0; i < paliersLevels.length; i++) {
+            if (userLevel >= paliersLevels[i]) {
+                correctRole = guild.getRoleById(paliersRoles[i]);
+            } else {
+                break;
+            }
+        }
+
+        if (correctRole == null) {
+            LOGs.sendLog("Aucun rôle trouvé pour le niveau " + userLevel, "WARNING");
+            return; // Aucun rôle trouvé pour ce niveau
+        }
+
+        Member member = guild.getMemberById(userId);
+        // Vérifier si l'utilisateur a déjà le rôle correct
+        for (long roleId : paliersRoles) {
+            Role role = guild.getRoleById(roleId);
+            if (role != null && member.getRoles().contains(role)) {
+                if (role.getIdLong() == correctRole.getIdLong()) {
+                    return; // L'utilisateur a déjà le rôle correct
+                }
+            }
+        }
+
+        // Ajouter le rôle correct à l'utilisateur
+        guild.addRoleToMember(member, correctRole).queue();
+
+        // Supprimer tous les autres rôles de palier de l'utilisateur
+        for (long roleId : paliersRoles) {
+            Role role = guild.getRoleById(roleId);
+            if (role != null && member.getRoles().contains(role) && role.getIdLong() != correctRole.getIdLong()) {
+                guild.removeRoleFromMember(member, role).queue();
+            }
+        }
+
+    }
+
+    public static Role getPalier(int level) {
+        for (int i = 0; i < paliersLevels.length; i++) {
+            if (level == paliersLevels[i]) {
+                return guild.getRoleById(paliersRoles[i]);
+            }
+        }
+        return null;
+    }
+}

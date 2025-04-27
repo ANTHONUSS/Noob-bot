@@ -1,15 +1,22 @@
 package fr.anthonus;
 
 import fr.anthonus.listeners.JoinEventListener;
+import fr.anthonus.listeners.SlashCommandListener;
 import fr.anthonus.utils.DatabaseManager;
 import fr.anthonus.utils.SettingsManager;
 import fr.anthonus.utils.UserManager;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.entities.Invite;
+import net.dv8tion.jda.api.interactions.commands.DefaultMemberPermissions;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
+import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
+import net.dv8tion.jda.api.utils.MemberCachePolicy;
 
 import static net.dv8tion.jda.api.interactions.commands.OptionType.*;
 
@@ -18,6 +25,7 @@ public class Main {
     public static long guildId;
 
     public static JDA jda;
+    public static Guild guild;
 
 
 
@@ -62,11 +70,11 @@ public class Main {
 
         LOGs.sendLog("Chargement du bot...", "LOADING");
         initBot();
+        guild = jda.getGuildById(guildId);
 
         LOGs.sendLog("Chargement des paramètres...", "LOADING");
         SettingsManager.loadSettings();
         LOGs.sendLog("Paramètres chargés", "LOADING");
-
 
         LOGs.sendLog("Chargement de la base de donnée...", "LOADING");
         DatabaseManager.initDatabase();
@@ -83,7 +91,10 @@ public class Main {
                 .enableIntents(GatewayIntent.GUILD_MESSAGES)
                 .enableIntents(GatewayIntent.GUILD_MEMBERS)
                 .enableIntents(GatewayIntent.GUILD_MESSAGE_REACTIONS)
+                .enableIntents(GatewayIntent.GUILD_PRESENCES)
+                .setMemberCachePolicy(MemberCachePolicy.ALL)
                 .addEventListeners(new JoinEventListener())
+                .addEventListeners(new SlashCommandListener())
                 .build();
 
         jda.awaitReady();
@@ -95,7 +106,17 @@ public class Main {
         commands.addCommands(
                 // DEFAULT COMMANDS
                 Commands.slash("stats", "Affiche les statistiques de soi même ou de l'utilisateur rentré en paramètre")
-                        .addOption(USER, "user", "Utilisateur à afficher", false)
+                        .addOption(USER, "user", "Utilisateur à afficher", false),
+
+                //ADMIN COMMANDS
+                Commands.slash("reload-data", "Recharge les données du bot")
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),
+
+                Commands.slash("set-xp", "Donne de l'xp à un utilisateur")
+                        .addOption(USER, "user", "Utilisateur à qui donner de l'xp", true)
+                        .addOptions(new OptionData(INTEGER, "xp", "xp à donner", true)
+                                .setRequiredRange(0, 752_500))
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR))
 
         );
         commands.queue();

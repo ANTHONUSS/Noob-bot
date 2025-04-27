@@ -2252,3 +2252,1637 @@ WELCOME ==> Un utilisateur a quitté le serveur : lofilia69
 
 FILE_LOADING ==> Utilisateur supprimé de la mémoire : lofilia69
 
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : 722086214949404682
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : 722086214949404682
+
+LOADING ==> Utilisateur sauvegardé avec succès : 722086214949404682
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et chargé avec l'ID 722086214949404682
+
+LOADING ==> Utilisateur sauvegardé avec succès : 765613792221462530
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : 722086214949404682
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : 722086214949404682
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /reload-data initialisée
+
+LOADING ==> Base de données initialisée avec succès
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+COMMAND ==> Données du bot rechargées
+
+COMMAND ==> Commande terminée
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /reload-data initialisée
+
+LOADING ==> Base de données initialisée avec succès
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+COMMAND ==> Données du bot rechargées
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Utilisateur sauvegardé avec succès : 722086214949404682
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID anthonus
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Utilisateur sauvegardé avec succès : anthonus2
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur sauvegardé avec succès : anthonus
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /reload-data initialisée
+
+LOADING ==> Base de données initialisée avec succès
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Données du bot rechargées
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur sauvegardé avec succès : anthonus2
+
+FILE_LOADING ==> Nouvel utilisateur ajouté à la base de données et chargé en mémoire : anthonus2
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+WELCOME ==> L'utilisateur anthonus2 a accepté les règles et est maintenant un membre actif.
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+WELCOME ==> L'utilisateur anthonus2 a accepté les règles et est maintenant un membre actif.
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+LOADING ==> XP mis à jour avec succès pour l'utilisateur : anthonus2
+
+LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : anthonus2, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : anthonus2
+
+WELCOME ==> L'utilisateur anthonus2 a accepté les règles et est maintenant un membre actif.
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+WELCOME ==> Un utilisateur a quitté le serveur : anthonus2
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : anthonus2
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Commande /stats initialisée
+
+ERROR ==> L'utilisateur n'existe pas : 765613792221462530
+
+COMMAND ==> Commande terminée
+
