@@ -1,0 +1,2254 @@
+LOADING ==> Chargement des utilisateurs...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Utilisateur null chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+DEBUG ==> userID : 722086214949404682
+xp : 100
+level : 0
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+DEBUG ==> userID : 722086214949404682
+xp : 100
+level : 0
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+DEBUG ==> userID : 636175076869537792
+xp : 500
+level : 1
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+DEBUG ==> userID : 689422002074681400
+xp : 1250
+level : 20
+
+FILE_LOADING ==> Utilisateur 566672564433322113 chargé avec succès
+
+DEBUG ==> userID : 566672564433322113
+xp : 69
+level : 69
+
+FILE_LOADING ==> Utilisateur 269217374698340355 chargé avec succès
+
+DEBUG ==> userID : 269217374698340355
+xp : 6969
+level : 5
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+DEBUG ==> userID : fr.anthonus.utils.User@31ea9581
+xp : 100
+level : 0
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+DEBUG ==> userID : fr.anthonus.utils.User@303cf2ba
+xp : 500
+level : 1
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+DEBUG ==> userID : fr.anthonus.utils.User@76494737
+xp : 1250
+level : 20
+
+FILE_LOADING ==> Utilisateur 566672564433322113 chargé avec succès
+
+DEBUG ==> userID : fr.anthonus.utils.User@4a003cbe
+xp : 69
+level : 69
+
+FILE_LOADING ==> Utilisateur 269217374698340355 chargé avec succès
+
+DEBUG ==> userID : fr.anthonus.utils.User@4082ba93
+xp : 6969
+level : 5
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+DEBUG ==> userID : 722086214949404682
+xp : 100
+level : 0
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+DEBUG ==> userID : 636175076869537792
+xp : 500
+level : 1
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+DEBUG ==> userID : 689422002074681400
+xp : 1250
+level : 20
+
+FILE_LOADING ==> Utilisateur 566672564433322113 chargé avec succès
+
+DEBUG ==> userID : 566672564433322113
+xp : 69
+level : 69
+
+FILE_LOADING ==> Utilisateur 269217374698340355 chargé avec succès
+
+DEBUG ==> userID : 269217374698340355
+xp : 6969
+level : 5
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+WARNING ==> Le fichier UserData est vide
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+DEBUG ==> server id : 1320059456742232094
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+DEBUG ==> member : DEVBot
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+DEBUG ==> mambres : 1
+
+DEBUG ==> member : DEVBot
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+DEBUG ==> Membres chargés : 5
+
+DEBUG ==> Membre : anthonus
+
+DEBUG ==> Membre : anthonus2
+
+DEBUG ==> Membre : JChatBot
+
+DEBUG ==> Membre : ANTHONUS-bot
+
+DEBUG ==> Membre : DEVBot
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+DEBUG ==> Membres chargés : 5
+
+DEBUG ==> Membre : anthonus
+
+DEBUG ==> Nouvel utilisateur ajouté : anthonus
+
+DEBUG ==> Membre : anthonus2
+
+DEBUG ==> Nouvel utilisateur ajouté : anthonus2
+
+DEBUG ==> Membre : JChatBot
+
+DEBUG ==> Nouvel utilisateur ajouté : JChatBot
+
+DEBUG ==> Membre : ANTHONUS-bot
+
+DEBUG ==> Nouvel utilisateur ajouté : ANTHONUS-bot
+
+DEBUG ==> Membre : DEVBot
+
+DEBUG ==> Nouvel utilisateur ajouté : DEVBot
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1332005661839589438 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1348061671071158303 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+ERROR ==> Impossible de trouver le serveur avec l'ID : 302094807046684672
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1332005661839589438 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1348061671071158303 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+DEBUG ==> Membres chargés : 5
+
+DEBUG ==> Membre : anthonus
+
+DEBUG ==> Membre : anthonus2
+
+DEBUG ==> Membre : JChatBot
+
+DEBUG ==> Membre : ANTHONUS-bot
+
+DEBUG ==> Membre : DEVBot
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1348061671071158303 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+DEBUG ==> Membres chargés : 5
+
+DEBUG ==> Membre : anthonus
+
+DEBUG ==> Membre : anthonus2
+
+DEBUG ==> Membre : JChatBot
+
+DEBUG ==> Nouvel utilisateur ajouté : JChatBot
+
+DEBUG ==> Membre : ANTHONUS-bot
+
+DEBUG ==> Nouvel utilisateur ajouté : ANTHONUS-bot
+
+DEBUG ==> Membre : DEVBot
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1332005661839589438 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+FILE_LOADING ==> Membres chargés : 5
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : DEVBot
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+FILE_LOADING ==> Membres chargés : 5
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : anthonus
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : ANTHONUS-bot
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : DEVBot
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+WARNING ==> Utilisateur avec ID 689422002074681400 introuvable dans le serveur
+
+WARNING ==> Utilisateur avec ID 765613792221462530 introuvable dans le serveur
+
+WARNING ==> Utilisateur avec ID 301360862550163456 introuvable dans le serveur
+
+WARNING ==> Utilisateur avec ID 1326325930192404501 introuvable dans le serveur
+
+WARNING ==> Utilisateur avec ID 722086214949404682 introuvable dans le serveur
+
+WARNING ==> Utilisateur avec ID 638745122254618639 introuvable dans le serveur
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+FILE_LOADING ==> Membres chargés : 5
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : ANTHONUS-bot
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : DEVBot
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur avec l'ID 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+FILE_LOADING ==> Membres chargés : 5
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : anthonus
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : ANTHONUS-bot
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et initialisé : DEVBot
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur avec l'ID 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1332005661839589438 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1348061671071158303 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+FILE_LOADING ==> Membres chargés : 5
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur avec l'ID 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1332005661839589438 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1348061671071158303 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+FILE_LOADING ==> Membres chargés : 5
+
+FILE_LOADING ==> Vérification des nouveaux membres...
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement du fichier UserData...
+
+FILE_LOADING ==> Utilisateur avec l'ID 689422002074681400 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 765613792221462530 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 301360862550163456 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1326325930192404501 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1332005661839589438 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 1348061671071158303 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 722086214949404682 chargé avec succès
+
+FILE_LOADING ==> Utilisateur avec l'ID 638745122254618639 chargé avec succès
+
+FILE_LOADING ==> Fichier UserData chargé avec succès
+
+LOADING ==> Création des utilisateurs restants...
+
+FILE_LOADING ==> Membres chargés : 5
+
+FILE_LOADING ==> Vérification des nouveaux membres...
+
+FILE_LOADING ==> Sauvegarde des données utilisateur dans UserData...
+
+FILE_LOADING ==> Données utilisateur sauvegardées avec succès dans UserData
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 722086214949404682
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 765613792221462530
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 1326325930192404501
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 1332005661839589438
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 1348061671071158303
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 722086214949404682
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 765613792221462530
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID anthonus
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Utilisateur chargé : 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé : 765613792221462530
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Base de donnée chargée
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+LOADING ==> Utilisateurs chargés
+
+FILE_LOADING ==> Utilisateur chargé : 722086214949404682
+
+FILE_LOADING ==> Nouvel utilisateur ajouté avec l'ID 765613792221462530
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+FILE_LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+LOADING ==> Utilisateur sauvegardé avec succès : 765613792221462530
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Utilisateur sauvegardé avec succès : 1324182387193544714
+
+FILE_LOADING ==> Nouvel utilisateur ajouté et chargé avec l'ID 1324182387193544714
+
+FILE_LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Un membre a quitté le serveur : lofilia69#0000
+
+LOADING ==> Un membre a rejoint le serveur : lofilia69#0000
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 1324182387193544714
+
+FILE_LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Un membre a rejoint le serveur : lofilia69
+
+LOADING ==> Un membre a quitté le serveur : lofilia69
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+DEBUG ==> 1366095106330857623
+
+DEBUG ==> 1366095084101304320
+
+DEBUG ==> 1366095241979101266
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 1324182387193544714
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 1324182387193544714
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : lofilia69
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : lofilia69
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : lofilia69
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 1324182387193544714
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : lofilia69
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : lofilia69
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : lofilia69, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : lofilia69
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 1324182387193544714
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un utilisateur a quitté le serveur : lofilia69
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : lofilia69
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : lofilia69
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : lofilia69, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : lofilia69
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1366095106330857623
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366095241979101266
+
+FILE_LOADING ==> Salon des commandes chargé : 1366095084101304320
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 722086214949404682
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 765613792221462530
+
+FILE_LOADING ==> Utilisateur chargé avec l'ID 1324182387193544714
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+WELCOME ==> Un utilisateur a quitté le serveur : lofilia69
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : lofilia69
+
+WELCOME ==> Un nouvel utilisateur a rejoint le serveur : lofilia69
+
+FILE_LOADING ==> Utilisateur déjà présent dans la base de données : lofilia69, chargement en mémoire...
+
+FILE_LOADING ==> Utilisateur chargé en mémoire : lofilia69
+
+WELCOME ==> Un utilisateur a quitté le serveur : lofilia69
+
+FILE_LOADING ==> Utilisateur supprimé de la mémoire : lofilia69
+
