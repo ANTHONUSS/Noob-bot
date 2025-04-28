@@ -48,6 +48,7 @@ public class StatsCommand extends Command {
 
         if (codeUser.getXp() < LevelManager.maxXp) {
             embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(codeUser.getXp())), false);
+            embed.addField("Nombre de niveaux pour le prochain palier", String.valueOf(LevelManager.getLevelsForNextPalier(codeUser.getLevel())), false);
         }
 
         embed.addField("Palier actuel", LevelManager.getPalier(codeUser.getLevel()).getName(), false);

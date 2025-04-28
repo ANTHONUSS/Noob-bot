@@ -47,6 +47,15 @@ public class LevelManager {
         return getXPforLevel(getLevelFromXP(xp) + 1) - xp;
     }
 
+    public static int getLevelsForNextPalier(int level) {
+        for (int i = 0; i < paliersLevels.length; i++) {
+            if (level < paliersLevels[i]) {
+                return paliersLevels[i] - level;
+            }
+        }
+        return -1;
+    }
+
     public static void checkAndUpdateUserRole(long userId, int userLevel) {
         // Trouver le rôle correspondant au niveau de l'utilisateur
         Role correctRole = null;

@@ -112,6 +112,8 @@ public class Main {
                 Commands.slash("stats", "Affiche les statistiques de soi même ou de l'utilisateur rentré en paramètre")
                         .addOption(USER, "user", "Utilisateur à afficher", false),
 
+                Commands.slash("leaderboard", "Affiche le classement des 10 premiers utilisateurs du serveur"),
+
                 //ADMIN COMMANDS
                 Commands.slash("reload-data", "Recharge les données du bot")
                         .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),

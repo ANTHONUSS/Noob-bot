@@ -4,6 +4,7 @@ import fr.anthonus.LOGs;
 import fr.anthonus.commands.admin.ClearCommand;
 import fr.anthonus.commands.admin.ReloadDataCommand;
 import fr.anthonus.commands.admin.SetXpCommand;
+import fr.anthonus.commands.users.LeaderBoardCommand;
 import fr.anthonus.commands.users.StatsCommand;
 import fr.anthonus.utils.managers.SettingsManager;
 import net.dv8tion.jda.api.Permission;
@@ -40,6 +41,10 @@ public class SlashCommandListener extends ListenerAdapter {
 
                 StatsCommand statsCommand = new StatsCommand(event, targetUserId);
                 statsCommand.run();
+            }
+            case "leaderboard" -> {
+                LeaderBoardCommand leaderBoardCommand = new LeaderBoardCommand(event);
+                leaderBoardCommand.run();
             }
 
             //ADMIN COMMANDS
