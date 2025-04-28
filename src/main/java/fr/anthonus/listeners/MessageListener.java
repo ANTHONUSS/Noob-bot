@@ -33,6 +33,7 @@ public class MessageListener extends ListenerAdapter {
         if (levelBefore != levelAfter) {
             user.setLevel(levelAfter);
             DatabaseManager.updateLevel(userId, levelAfter);
+            LevelManager.sendLevelUpMessage(userId, levelAfter);
         }
 
         user.setLastMessageTime(Instant.now());

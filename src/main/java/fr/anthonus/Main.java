@@ -119,7 +119,11 @@ public class Main {
                         .addOption(USER, "user", "Utilisateur à qui donner de l'xp", true)
                         .addOptions(new OptionData(INTEGER, "xp", "xp à donner", true)
                                 .setRequiredRange(0, 752_500))
-                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR))
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),
+                Commands.slash("clear", "Supprime un certain nombre de messages du salon.")
+                        .addOptions(new OptionData(INTEGER, "nombre", "nombre de messages à supprimer", true)
+                                .setRequiredRange(1, 100))
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.MESSAGE_MANAGE))
 
         );
         commands.queue();

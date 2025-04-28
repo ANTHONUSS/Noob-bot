@@ -3,6 +3,8 @@ package fr.anthonus.utils;
 import fr.anthonus.LOGs;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
+import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 
 import static fr.anthonus.Main.*;
 
@@ -44,6 +46,14 @@ public class LevelManager {
         return getXPforLevel(getLevelFromXP(xp) + 1) - xp;
     }
 
+    public static void sendLevelUpMessage(long userId, int level) {
+        User user = jda.retrieveUserById(userId).complete();
+        String message = "## :tada: Félicitations " + user.getAsMention() + " ! Tu es maintenant au niveau " + level + " !";
+
+        TextChannel channel = guild.getTextChannelById(SettingsManager.levelInfoChannel);
+        channel.sendMessage(message).queue();
+    }
+
     public static void checkAndUpdateUserRole(long userId, int userLevel) {
         // Trouver le rôle correspondant au niveau de l'utilisateur
         Role correctRole = null;
@@ -82,6 +92,19 @@ public class LevelManager {
             }
         }
 
+        // Envoyer un message de félicitations
+        if (correctRole.getIdLong() != paliersRoles[0])
+            sendPalierChangeMessage(userId, correctRole);
+
+    }
+
+    public static void sendPalierChangeMessage(long userId, Role role) {
+        User user = jda.retrieveUserById(userId).complete();
+        String message = "## :tada: Félicitations " + user.getAsMention() + ", tu viens de monter de palier !\n" +
+                "Tu es maintenant devenu **@" + role.getName() + "** !";
+
+        TextChannel channel = guild.getTextChannelById(SettingsManager.levelInfoChannel);
+        channel.sendMessage(message).queue();
     }
 
     public static Role getPalier(int level) {

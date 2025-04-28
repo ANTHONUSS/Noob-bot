@@ -1,4 +1,4 @@
-package fr.anthonus.commands.users;
+package fr.anthonus.commands.admin;
 
 import fr.anthonus.commands.Command;
 import fr.anthonus.utils.DatabaseManager;

@@ -50,7 +50,7 @@ public class StatsCommand extends Command {
             embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(user.getXp())), false);
         }
 
-        embed.addField("Palier actuel", LevelManager.getPalier(user.getLevel()).getAsMention(), false);
+        embed.addField("Palier actuel", LevelManager.getPalier(user.getLevel()).getName(), false);
 
         currentEvent.replyEmbeds(embed.build()).queue();
     }
