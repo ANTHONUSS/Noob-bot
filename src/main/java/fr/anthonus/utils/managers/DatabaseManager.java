@@ -1,6 +1,7 @@
-package fr.anthonus.utils;
+package fr.anthonus.utils.managers;
 
 import fr.anthonus.LOGs;
+import fr.anthonus.utils.User;
 
 import java.sql.*;
 

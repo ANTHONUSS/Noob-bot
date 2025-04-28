@@ -5,7 +5,7 @@ import fr.anthonus.commands.admin.ClearCommand;
 import fr.anthonus.commands.admin.ReloadDataCommand;
 import fr.anthonus.commands.admin.SetXpCommand;
 import fr.anthonus.commands.users.StatsCommand;
-import fr.anthonus.utils.SettingsManager;
+import fr.anthonus.utils.managers.SettingsManager;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;

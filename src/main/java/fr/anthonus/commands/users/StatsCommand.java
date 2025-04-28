@@ -2,9 +2,9 @@ package fr.anthonus.commands.users;
 
 import fr.anthonus.LOGs;
 import fr.anthonus.commands.Command;
-import fr.anthonus.utils.LevelManager;
+import fr.anthonus.utils.managers.LevelManager;
 import fr.anthonus.utils.User;
-import fr.anthonus.utils.UserManager;
+import fr.anthonus.utils.managers.UserManager;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 

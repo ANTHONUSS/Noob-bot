@@ -1,7 +1,7 @@
-package fr.anthonus.utils;
+package fr.anthonus.utils.managers;
 
 import fr.anthonus.LOGs;
-import net.dv8tion.jda.api.entities.Guild;
+import fr.anthonus.utils.User;
 import net.dv8tion.jda.api.entities.Member;
 
 import java.util.HashMap;

@@ -2,8 +2,8 @@ package fr.anthonus.commands.admin;
 
 import fr.anthonus.LOGs;
 import fr.anthonus.commands.Command;
-import fr.anthonus.utils.DatabaseManager;
-import fr.anthonus.utils.UserManager;
+import fr.anthonus.utils.managers.DatabaseManager;
+import fr.anthonus.utils.managers.UserManager;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
 public class ReloadDataCommand extends Command {

@@ -1,6 +1,7 @@
-package fr.anthonus.utils;
+package fr.anthonus.utils.managers;
 
 import fr.anthonus.LOGs;
+import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.entities.User;
@@ -44,14 +45,6 @@ public class LevelManager {
 
     public static int getXPForLevelUp(int xp) {
         return getXPforLevel(getLevelFromXP(xp) + 1) - xp;
-    }
-
-    public static void sendLevelUpMessage(long userId, int level) {
-        User user = jda.retrieveUserById(userId).complete();
-        String message = "## :tada: Félicitations " + user.getAsMention() + " ! Tu es maintenant au niveau " + level + " !";
-
-        TextChannel channel = guild.getTextChannelById(SettingsManager.levelInfoChannel);
-        channel.sendMessage(message).queue();
     }
 
     public static void checkAndUpdateUserRole(long userId, int userLevel) {
@@ -98,13 +91,34 @@ public class LevelManager {
 
     }
 
+    public static void sendLevelUpMessage(long userId, int level) {
+        User user = jda.retrieveUserById(userId).complete();
+        TextChannel channel = guild.getTextChannelById(SettingsManager.levelInfoChannel);
+
+        EmbedBuilder embed = new EmbedBuilder();
+        embed.setTitle("Nouveau niveau atteint !");
+        embed.setDescription("Bravo " + user.getName() + ", tu es maintenant au niveau " + level + " !");
+        embed.setThumbnail(user.getAvatarUrl());
+        embed.setColor(getPalier(level).getColor());
+
+        channel.sendMessage(user.getAsMention())
+                .setEmbeds(embed.build())
+                .queue();
+    }
+
     public static void sendPalierChangeMessage(long userId, Role role) {
         User user = jda.retrieveUserById(userId).complete();
-        String message = "## :tada: Félicitations " + user.getAsMention() + ", tu viens de monter de palier !\n" +
-                "Tu es maintenant devenu **@" + role.getName() + "** !";
-
         TextChannel channel = guild.getTextChannelById(SettingsManager.levelInfoChannel);
-        channel.sendMessage(message).queue();
+
+        EmbedBuilder embed = new EmbedBuilder();
+        embed.setTitle("Nouveau palier atteint !");
+        embed.setDescription("Bravo " + user.getName() + ", tu as atteint le palier **" + role.getName() + "** !");
+        embed.setThumbnail(user.getAvatarUrl());
+        embed.setColor(role.getColor());
+
+        channel.sendMessage(user.getAsMention())
+                .setEmbeds(embed.build())
+                .queue();
     }
 
     public static Role getPalier(int level) {

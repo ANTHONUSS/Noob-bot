@@ -2,6 +2,10 @@ package fr.anthonus.listeners;
 
 import fr.anthonus.LOGs;
 import fr.anthonus.utils.*;
+import fr.anthonus.utils.managers.DatabaseManager;
+import fr.anthonus.utils.managers.LevelManager;
+import fr.anthonus.utils.managers.SettingsManager;
+import fr.anthonus.utils.managers.UserManager;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;

@@ -1,4 +1,4 @@
-package fr.anthonus.utils;
+package fr.anthonus.utils.managers;
 
 import java.io.FileReader;
 import java.io.IOException;
