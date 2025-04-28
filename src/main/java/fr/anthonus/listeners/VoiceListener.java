@@ -7,10 +7,10 @@ import fr.anthonus.utils.managers.DatabaseManager;
 import fr.anthonus.utils.managers.LevelManager;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.channel.unions.AudioChannelUnion;
+import net.dv8tion.jda.api.events.guild.voice.GenericGuildVoiceEvent;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceMuteEvent;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceUpdateEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.hooks.VoiceDispatchInterceptor;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -19,8 +19,6 @@ import java.util.Set;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import static fr.anthonus.Main.jda;
 
 public class VoiceListener extends ListenerAdapter {
     private final Map<Long, VoiceChannel> voiceChannels = new HashMap<>();
@@ -35,6 +33,12 @@ public class VoiceListener extends ListenerAdapter {
             VoiceChannel voiceChannel = voiceChannels.get(channelJoined.getIdLong());
 
             voiceChannel.numberOfUsers++;
+
+            CodeUser codeUser = CodeUserManager.users.get(event.getMember().getUser().getIdLong());
+            Member member = event.getMember();
+            if (!member.getVoiceState().isMuted() && !member.getVoiceState().isDeafened()) {
+                voiceChannel.activeCodeUsers.add(codeUser);
+            }
         }
 
         if (channelLeft != null) {
@@ -54,6 +58,9 @@ public class VoiceListener extends ListenerAdapter {
     public void onGuildVoiceMute(GuildVoiceMuteEvent event) {
         CodeUser codeUser = CodeUserManager.users.get(event.getMember().getUser().getIdLong());
         Member member = event.getMember();
+        if (event.getVoiceState().getChannel() == null) {
+            return;
+        }
         VoiceChannel voiceChannel = voiceChannels.get(event.getVoiceState().getChannel().getIdLong());
 
         if (!member.getVoiceState().isMuted() && !member.getVoiceState().isDeafened()) {
@@ -61,7 +68,6 @@ public class VoiceListener extends ListenerAdapter {
         } else {
             voiceChannel.activeCodeUsers.remove(codeUser);
         }
-
     }
 
     private class VoiceChannel {
