@@ -2,7 +2,7 @@ package fr.anthonus.utils;
 
 import java.time.Instant;
 
-public class User {
+public class CodeUser {
     private long userId;
 
     private int xp;
@@ -10,7 +10,7 @@ public class User {
 
     private Instant lastMessageTime;
 
-    public User(long userId, int xp, int level) {
+    public CodeUser(long userId, int xp, int level) {
         this.userId = userId;
         this.xp = xp;
         this.level = level;

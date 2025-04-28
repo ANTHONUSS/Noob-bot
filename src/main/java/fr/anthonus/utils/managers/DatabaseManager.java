@@ -1,7 +1,7 @@
 package fr.anthonus.utils.managers;
 
 import fr.anthonus.LOGs;
-import fr.anthonus.utils.User;
+import fr.anthonus.utils.CodeUser;
 
 import java.sql.*;
 
@@ -31,23 +31,23 @@ public class DatabaseManager {
 
     /**
      * Sauvegarde un utilisateur dans la base de données (ou le met à jour si jamais iul existe déjà).
-     * @param user L'utilisateur à sauvegarder.
+     * @param codeUser L'utilisateur à sauvegarder.
      */
-    public static void saveUser(User user){
+    public static void saveUser(CodeUser codeUser){
         String query = "INSERT INTO Users (user_id, xp, level) VALUES (?, ?, ?) " +
                 "ON CONFLICT(user_id) DO UPDATE SET xp = ?, level = ?;";
 
         try (Connection conn = DriverManager.getConnection(DB_URL)) {
             PreparedStatement stmt = conn.prepareStatement(query);
-            stmt.setLong(1, user.getUserId());
-            stmt.setInt(2, user.getXp());
-            stmt.setInt(3, user.getLevel());
+            stmt.setLong(1, codeUser.getUserId());
+            stmt.setInt(2, codeUser.getXp());
+            stmt.setInt(3, codeUser.getLevel());
 
-            stmt.setInt(4, user.getXp());
-            stmt.setInt(5, user.getLevel());
+            stmt.setInt(4, codeUser.getXp());
+            stmt.setInt(5, codeUser.getLevel());
             stmt.executeUpdate();
 
-            LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(user.getUserId()).complete().getName(), "FILE_LOADING");
+            LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(codeUser.getUserId()).complete().getName(), "FILE_LOADING");
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la sauvegarde de l'utilisateur : " + e, "ERROR");
@@ -59,7 +59,7 @@ public class DatabaseManager {
      * @param userId L'ID de l'utilisateur à charger.
      * @return L'utilisateur chargé, ou null s'il n'existe pas.
      */
-    public static User loadUser(long userId) {
+    public static CodeUser loadUser(long userId) {
         String query = "SELECT xp, level FROM Users WHERE user_id = ?;";
 
         try (Connection conn = DriverManager.getConnection(DB_URL)) {
@@ -71,7 +71,7 @@ public class DatabaseManager {
                 int xp = result.getInt("xp");
                 int level = result.getInt("level");
 
-                return new User(userId, xp, level);
+                return new CodeUser(userId, xp, level);
             }
 
         } catch (SQLException e) {

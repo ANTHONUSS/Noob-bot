@@ -3,9 +3,10 @@ package fr.anthonus;
 import fr.anthonus.listeners.JoinEventListener;
 import fr.anthonus.listeners.MessageListener;
 import fr.anthonus.listeners.SlashCommandListener;
+import fr.anthonus.listeners.VoiceListener;
 import fr.anthonus.utils.managers.DatabaseManager;
 import fr.anthonus.utils.managers.SettingsManager;
-import fr.anthonus.utils.managers.UserManager;
+import fr.anthonus.utils.managers.CodeUserManager;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -81,7 +82,7 @@ public class Main {
         DatabaseManager.initDatabase();
 
         LOGs.sendLog("Chargement des utilisateurs...", "LOADING");
-        UserManager.loadUsers();
+        CodeUserManager.loadUsers();
 
     }
 
@@ -97,6 +98,7 @@ public class Main {
                 .addEventListeners(new JoinEventListener())
                 .addEventListeners(new SlashCommandListener())
                 .addEventListeners(new MessageListener())
+                .addEventListeners(new VoiceListener())
                 .build();
 
         jda.awaitReady();

@@ -1,7 +1,7 @@
 package fr.anthonus.utils.managers;
 
 import fr.anthonus.LOGs;
-import fr.anthonus.utils.User;
+import fr.anthonus.utils.CodeUser;
 import net.dv8tion.jda.api.entities.Member;
 
 import java.util.HashMap;
@@ -9,8 +9,8 @@ import java.util.Map;
 
 import static fr.anthonus.Main.*;
 
-public class UserManager {
-    public static final Map<Long, User> users = new HashMap<>();
+public class CodeUserManager {
+    public static final Map<Long, CodeUser> users = new HashMap<>();
 
     /**
      * Charge tous les utilisateurs du serveur en mémoire et les ajoute à la base de données s'ils n'y sont pas déjà.
@@ -28,15 +28,15 @@ public class UserManager {
                     continue; // Ignore les bots
 
                 long userId = member.getIdLong();
-                User user = DatabaseManager.loadUser(userId);
+                CodeUser codeUser = DatabaseManager.loadUser(userId);
 
-                if (user == null) {
-                    user = new User(userId, 0, 0);
-                    DatabaseManager.saveUser(user);
-                    users.put(userId, user);
+                if (codeUser == null) {
+                    codeUser = new CodeUser(userId, 0, 0);
+                    DatabaseManager.saveUser(codeUser);
+                    users.put(userId, codeUser);
                     LOGs.sendLog("Nouvel utilisateur ajouté et chargé : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
                 } else {
-                    users.put(userId, user);
+                    users.put(userId, codeUser);
                     LOGs.sendLog("Utilisateur chargé : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
                 }
             }

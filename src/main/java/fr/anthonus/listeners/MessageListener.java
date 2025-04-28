@@ -4,7 +4,7 @@ import fr.anthonus.utils.*;
 import fr.anthonus.utils.managers.DatabaseManager;
 import fr.anthonus.utils.managers.LevelManager;
 import fr.anthonus.utils.managers.SettingsManager;
-import fr.anthonus.utils.managers.UserManager;
+import fr.anthonus.utils.managers.CodeUserManager;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -16,31 +16,31 @@ public class MessageListener extends ListenerAdapter {
         if (event.getAuthor().isBot()) return;
 
         long userId = event.getAuthor().getIdLong();
-        User user = UserManager.users.get(userId);
+        CodeUser codeUser = CodeUserManager.users.get(userId);
 
-        if (user != null && user.getLastMessageTime() != null &&
-            Instant.now().minusSeconds(SettingsManager.timeBeforeXP).isBefore(user.getLastMessageTime())) {
+        if (codeUser != null && codeUser.getLastMessageTime() != null &&
+            Instant.now().minusSeconds(SettingsManager.timeBeforeXP).isBefore(codeUser.getLastMessageTime())) {
             return;
         }
 
-        if (user.getXp() >= LevelManager.maxXp) {
+        if (codeUser.getXp() >= LevelManager.maxXp) {
             return;
         }
 
-        int levelBefore = LevelManager.getLevelFromXP(user.getXp());
+        int levelBefore = LevelManager.getLevelFromXP(codeUser.getXp());
 
-        user.addXp(10);
-        DatabaseManager.updateXp(userId, user.getXp());
+        codeUser.addXp(LevelManager.xp_per_msg);
+        DatabaseManager.updateXp(userId, codeUser.getXp());
 
-        int levelAfter = LevelManager.getLevelFromXP(user.getXp());
+        int levelAfter = LevelManager.getLevelFromXP(codeUser.getXp());
         if (levelBefore != levelAfter) {
-            user.setLevel(levelAfter);
+            codeUser.setLevel(levelAfter);
             DatabaseManager.updateLevel(userId, levelAfter);
             LevelManager.sendLevelUpMessage(userId, levelAfter);
+            LevelManager.checkAndUpdateUserRole(userId, levelAfter);
         }
 
-        user.setLastMessageTime(Instant.now());
+        codeUser.setLastMessageTime(Instant.now());
 
-        LevelManager.checkAndUpdateUserRole(userId, levelAfter);
     }
 }

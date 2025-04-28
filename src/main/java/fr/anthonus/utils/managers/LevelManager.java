@@ -12,9 +12,9 @@ import static fr.anthonus.Main.*;
 public class LevelManager {
     private static int a = 75;
     private static int b = 25;
-    private static int xp_per_msg = 10;
-    private static int xp_per_min_voice = 5;
 
+    public static int xp_per_msg = 10;
+    public static int xp_per_min_voice = 5;
     public static int maxXp = 752500;
 
     /**

@@ -2,9 +2,9 @@ package fr.anthonus.commands.users;
 
 import fr.anthonus.LOGs;
 import fr.anthonus.commands.Command;
+import fr.anthonus.utils.CodeUser;
 import fr.anthonus.utils.managers.LevelManager;
-import fr.anthonus.utils.User;
-import fr.anthonus.utils.managers.UserManager;
+import fr.anthonus.utils.managers.CodeUserManager;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
@@ -24,9 +24,9 @@ public class StatsCommand extends Command {
     public void run() {
         if (targetUserId == -1) targetUserId = currentEvent.getUser().getIdLong();
 
-        User user = UserManager.users.get(targetUserId);
+        CodeUser codeUser = CodeUserManager.users.get(targetUserId);
 
-        if (user == null) {
+        if (codeUser == null) {
             currentEvent.reply("## :x: L'utilisateur n'existe pas.").setEphemeral(true).queue();
             LOGs.sendLog("L'utilisateur n'existe pas : " + targetUserId, "ERROR");
             return;
@@ -43,14 +43,14 @@ public class StatsCommand extends Command {
 
         EmbedBuilder embed = new EmbedBuilder();
         embed.setTitle("Statistiques de " + name);
-        embed.addField("XP", String.valueOf(user.getXp()), true);
-        embed.addField("Niveau", String.valueOf(user.getLevel()), true);
+        embed.addField("XP", String.valueOf(codeUser.getXp()), true);
+        embed.addField("Niveau", String.valueOf(codeUser.getLevel()), true);
 
-        if (user.getXp() < LevelManager.maxXp) {
-            embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(user.getXp())), false);
+        if (codeUser.getXp() < LevelManager.maxXp) {
+            embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(codeUser.getXp())), false);
         }
 
-        embed.addField("Palier actuel", LevelManager.getPalier(user.getLevel()).getName(), false);
+        embed.addField("Palier actuel", LevelManager.getPalier(codeUser.getLevel()).getName(), false);
 
         currentEvent.replyEmbeds(embed.build()).queue();
     }

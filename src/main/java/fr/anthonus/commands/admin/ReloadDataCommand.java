@@ -3,7 +3,7 @@ package fr.anthonus.commands.admin;
 import fr.anthonus.LOGs;
 import fr.anthonus.commands.Command;
 import fr.anthonus.utils.managers.DatabaseManager;
-import fr.anthonus.utils.managers.UserManager;
+import fr.anthonus.utils.managers.CodeUserManager;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
 public class ReloadDataCommand extends Command {
@@ -17,8 +17,8 @@ public class ReloadDataCommand extends Command {
     public void run() {
         DatabaseManager.initDatabase(); // un peu inutile mais oklm
 
-        UserManager.users.clear();
-        UserManager.loadUsers();
+        CodeUserManager.users.clear();
+        CodeUserManager.loadUsers();
 
         currentEvent.reply("Données rechargées avec succès !").setEphemeral(true).queue();
 

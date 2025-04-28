@@ -178,31 +178,31 @@ FILE_LOADING ==> Chargement du fichier UserData...
 
 FILE_LOADING ==> Utilisateur 722086214949404682 chargé avec succès
 
-DEBUG ==> userID : fr.anthonus.utils.User@31ea9581
+DEBUG ==> userID : fr.anthonus.utils.CodeUser@31ea9581
 xp : 100
 level : 0
 
 FILE_LOADING ==> Utilisateur 636175076869537792 chargé avec succès
 
-DEBUG ==> userID : fr.anthonus.utils.User@303cf2ba
+DEBUG ==> userID : fr.anthonus.utils.CodeUser@303cf2ba
 xp : 500
 level : 1
 
 FILE_LOADING ==> Utilisateur 689422002074681400 chargé avec succès
 
-DEBUG ==> userID : fr.anthonus.utils.User@76494737
+DEBUG ==> userID : fr.anthonus.utils.CodeUser@76494737
 xp : 1250
 level : 20
 
 FILE_LOADING ==> Utilisateur 566672564433322113 chargé avec succès
 
-DEBUG ==> userID : fr.anthonus.utils.User@4a003cbe
+DEBUG ==> userID : fr.anthonus.utils.CodeUser@4a003cbe
 xp : 69
 level : 69
 
 FILE_LOADING ==> Utilisateur 269217374698340355 chargé avec succès
 
-DEBUG ==> userID : fr.anthonus.utils.User@4082ba93
+DEBUG ==> userID : fr.anthonus.utils.CodeUser@4082ba93
 xp : 6969
 level : 5
 
@@ -4840,4 +4840,417 @@ FILE_LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
 FILE_LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
 
 COMMAND ==> Commande terminée
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+FILE_LOADING ==> Temps avant XP chargé : 60
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+DEBUG ==> utilisateur a join le voc
+
+DEBUG ==> Voice channel initialisé
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+FILE_LOADING ==> Temps avant XP chargé : 60
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+DEBUG ==> utilisateur a join le voc
+
+DEBUG ==> Voice channel initialisé
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> utilisateur a leave le voc
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+FILE_LOADING ==> Temps avant XP chargé : 60
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+DEBUG ==> utilisateur a join le voc
+
+DEBUG ==> Voice channel initialisé
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> utilisateur a leave le voc
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+FILE_LOADING ==> Temps avant XP chargé : 60
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+DEBUG ==> utilisateur a join le voc
+
+DEBUG ==> Voice channel initialisé
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+FILE_LOADING ==> Temps avant XP chargé : 60
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur a leave le voc
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur a join le voc
+
+DEBUG ==> Voice channel initialisé
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+LOADING ==> Chargement du token Discord...
+
+LOADING ==> Token Discord chargé
+
+LOADING ==> Chargement de l'identifiant du serveur...
+
+LOADING ==> Identifiant du serveur chargé
+
+LOADING ==> Chargement du bot...
+
+LOADING ==> Bot démarré
+
+LOADING ==> Chargement des commandes...
+
+LOADING ==> Commandes chargées
+
+LOADING ==> Chargement des paramètres...
+
+FILE_LOADING ==> Salon des arrivées chargé : 1363252762141262044
+
+FILE_LOADING ==> Salon des annonces de niveaux chargé : 1366181316998991893
+
+FILE_LOADING ==> Salon des commandes chargé : 1364206469830017064
+
+FILE_LOADING ==> Temps avant XP chargé : 60
+
+LOADING ==> Paramètres chargés
+
+LOADING ==> Chargement de la base de donnée...
+
+LOADING ==> Base de données initialisée avec succès
+
+LOADING ==> Chargement des utilisateurs...
+
+FILE_LOADING ==> Chargement des utilisateurs du serveur...
+
+FILE_LOADING ==> Utilisateur chargé : anthonus2
+
+FILE_LOADING ==> Utilisateur chargé : anthonus
+
+LOADING ==> Tous les utilisateurs ont été chargés
+
+DEBUG ==> Voice channel initialisé
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+FILE_LOADING ==> Niveau mis à jour avec succès pour l'utilisateur : anthonus2
+
+COMMAND ==> Commande terminée
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> ajout de l'xp pour anthonus2
+
+DEBUG ==> ajout de l'xp pour anthonus
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
+
+DEBUG ==> ajout de l'xp pour anthonus2
+
+DEBUG ==> ajout de l'xp pour anthonus
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+DEBUG ==> ajout de l'xp pour anthonus2
+
+DEBUG ==> ajout de l'xp pour anthonus
+
+DEBUG ==> ajout de l'xp pour anthonus2
+
+DEBUG ==> ajout de l'xp pour anthonus
+
+COMMAND ==> Commande /stats initialisée
+
+COMMAND ==> Commande terminée
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est mute/deafen
+
+COMMAND ==> Commande /clear initialisée
+
+COMMAND ==> Commande terminée
+
+COMMAND ==> Clear effectué
+User : @anthonus
+Salon : #💬•général
+Amount : 100
+
+DEBUG ==> fonction appellée
+
+DEBUG ==> utilisateur s'est unmute/undeafen
 
