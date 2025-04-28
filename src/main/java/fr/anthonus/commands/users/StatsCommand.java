@@ -46,13 +46,13 @@ public class StatsCommand extends Command {
         embed.addField("XP", String.valueOf(user.getXp()), true);
         embed.addField("Niveau", String.valueOf(user.getLevel()), true);
 
-        embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(user.getXp())), false);
+        if (user.getXp() < LevelManager.maxXp) {
+            embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(user.getXp())), false);
+        }
 
         embed.addField("Palier actuel", LevelManager.getPalier(user.getLevel()).getAsMention(), false);
 
         currentEvent.replyEmbeds(embed.build()).queue();
-
-
     }
 
 }

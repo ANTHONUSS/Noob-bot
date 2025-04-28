@@ -12,6 +12,8 @@ public class LevelManager {
     private static int xp_per_msg = 10;
     private static int xp_per_min_voice = 5;
 
+    public static int maxXp = 752500;
+
     /**
      * Les niveaux à atteindre pour chaque palier (voir excel pour référence)
      */
@@ -84,10 +86,11 @@ public class LevelManager {
 
     public static Role getPalier(int level) {
         for (int i = 0; i < paliersLevels.length; i++) {
-            if (level == paliersLevels[i]) {
+            if (level >= paliersLevels[i] && (i == paliersLevels.length - 1 || level < paliersLevels[i + 1])) {
                 return guild.getRoleById(paliersRoles[i]);
             }
         }
+
         return null;
     }
 }

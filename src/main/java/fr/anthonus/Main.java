@@ -1,6 +1,7 @@
 package fr.anthonus;
 
 import fr.anthonus.listeners.JoinEventListener;
+import fr.anthonus.listeners.MessageListener;
 import fr.anthonus.listeners.SlashCommandListener;
 import fr.anthonus.utils.DatabaseManager;
 import fr.anthonus.utils.SettingsManager;
@@ -35,6 +36,7 @@ public class Main {
         LOGs.addLogType("FILE_LOADING", 130, 0, 255);
         LOGs.addLogType("COMMAND", 255, 172, 53);
         LOGs.addLogType("WELCOME", 0, 143, 255);
+        LOGs.addLogType("XP", 134, 55, 0);
         LOGs.addLogType("WARNING", 255, 255, 0);
         LOGs.addLogType("DEBUG", 255, 171, 247);
 
@@ -95,6 +97,7 @@ public class Main {
                 .setMemberCachePolicy(MemberCachePolicy.ALL)
                 .addEventListeners(new JoinEventListener())
                 .addEventListeners(new SlashCommandListener())
+                .addEventListeners(new MessageListener())
                 .build();
 
         jda.awaitReady();

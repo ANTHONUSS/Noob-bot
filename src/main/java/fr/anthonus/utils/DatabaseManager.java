@@ -94,7 +94,9 @@ public class DatabaseManager {
             stmt.setLong(2, userId);
             stmt.executeUpdate();
 
-            LOGs.sendLog("XP mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "LOADING");
+            // En commentaire parce que ça spam le log
+//            LOGs.sendLog("XP mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la mise à jour de l'XP pour l'utilisateur : " + e, "ERROR");
@@ -115,7 +117,7 @@ public class DatabaseManager {
             stmt.setLong(2, userId);
             stmt.executeUpdate();
 
-            LOGs.sendLog("Niveau mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "LOADING");
+            LOGs.sendLog("Niveau mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la mise à jour du niveau pour l'utilisateur : " + e, "ERROR");
