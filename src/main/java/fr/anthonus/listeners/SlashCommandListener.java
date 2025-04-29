@@ -4,6 +4,7 @@ import fr.anthonus.LOGs;
 import fr.anthonus.commands.admin.ClearCommand;
 import fr.anthonus.commands.admin.ReloadDataCommand;
 import fr.anthonus.commands.admin.SetXpCommand;
+import fr.anthonus.commands.admin.WinReactionCommand;
 import fr.anthonus.commands.users.LeaderBoardCommand;
 import fr.anthonus.commands.users.StatsCommand;
 import fr.anthonus.utils.managers.SettingsManager;
@@ -31,7 +32,7 @@ public class SlashCommandListener extends ListenerAdapter {
         }
 
 
-        switch (event.getName()){
+        switch (event.getName()) {
             // NORMAL COMMANDS
             case "stats" -> {
                 long targetUserId = -1;
@@ -64,6 +65,20 @@ public class SlashCommandListener extends ListenerAdapter {
 
                 ClearCommand clearCommand = new ClearCommand(event, count);
                 clearCommand.run();
+            }
+            case "win-reaction" -> {
+                long messageId;
+                try {
+                    messageId = event.getOption("message-id").getAsLong();
+                } catch (Exception e) {
+                    event.reply("## :x: L'id entré n'est pas un id.").setEphemeral(true).queue();
+                    return;
+                }
+                int xp = event.getOption("xp").getAsInt();
+
+
+                WinReactionCommand winReactionCommand = new WinReactionCommand(event, messageId, xp);
+                winReactionCommand.run();
             }
         }
         LOGs.sendLog("Commande terminée", "COMMAND");

@@ -126,7 +126,12 @@ public class Main {
                 Commands.slash("clear", "Supprime un certain nombre de messages du salon.")
                         .addOptions(new OptionData(INTEGER, "nombre", "nombre de messages à supprimer", true)
                                 .setRequiredRange(1, 100))
-                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.MESSAGE_MANAGE))
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.MESSAGE_MANAGE)),
+
+                Commands.slash("win-reaction", "Donne le nombre d'xp à tous les utilisateurs qui ont coché une réaction au message")
+                        .addOption(STRING, "message-id", "ID du message", true)
+                        .addOption(INTEGER, "xp", "xp à donner", true)
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR))
 
         );
         commands.queue();

@@ -1,5 +1,6 @@
 package fr.anthonus.commands.admin;
 
+import fr.anthonus.LOGs;
 import fr.anthonus.commands.Command;
 import fr.anthonus.utils.managers.DatabaseManager;
 import fr.anthonus.utils.managers.LevelManager;
@@ -17,6 +18,8 @@ public class SetXpCommand extends Command {
         super(event);
         this.targetUserId = targetUserId;
         this.xp = xp;
+
+        LOGs.sendLog("Commande /set-xp initialisée", "COMMAND");
     }
 
     @Override

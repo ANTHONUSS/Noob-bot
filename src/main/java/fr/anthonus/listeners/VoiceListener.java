@@ -1,5 +1,6 @@
 package fr.anthonus.listeners;
 
+import fr.anthonus.LOGs;
 import fr.anthonus.utils.CodeUser;
 import fr.anthonus.utils.managers.CodeUserManager;
 import fr.anthonus.utils.managers.DatabaseManager;
@@ -26,9 +27,10 @@ public class VoiceListener extends ListenerAdapter {
         AudioChannelUnion channelJoined = event.getChannelJoined();
         AudioChannelUnion channelLeft = event.getChannelLeft();
         if (channelJoined != null) {
-            voiceChannels.computeIfAbsent(channelJoined.getIdLong(), id -> new VoiceChannel());
+            long channelId = channelJoined.getIdLong();
+            voiceChannels.computeIfAbsent(channelId, id -> new VoiceChannel(channelJoined.getName()));
 
-            VoiceChannel voiceChannel = voiceChannels.get(channelJoined.getIdLong());
+            VoiceChannel voiceChannel = voiceChannels.get(channelId);
 
             voiceChannel.numberOfUsers++;
 
@@ -36,16 +38,29 @@ public class VoiceListener extends ListenerAdapter {
             Member member = event.getMember();
             if (!member.getVoiceState().isMuted() && !member.getVoiceState().isDeafened()) {
                 voiceChannel.activeCodeUsers.add(codeUser);
+
+                if (!voiceChannel.isActive && voiceChannel.activeCodeUsers.size() >= 2) {
+                    voiceChannel.isActive = true;
+                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", "XP");
+                }
+
             }
         }
 
         if (channelLeft != null) {
-            VoiceChannel voiceChannel = voiceChannels.get(channelLeft.getIdLong());
+            long channelId = channelLeft.getIdLong();
+            VoiceChannel voiceChannel = voiceChannels.get(channelId);
             if (voiceChannel != null) {
                 voiceChannel.numberOfUsers--;
 
                 CodeUser codeUser = CodeUserManager.users.get(event.getMember().getUser().getIdLong());
                 voiceChannel.activeCodeUsers.remove(codeUser);
+
+                if (voiceChannel.isActive && voiceChannel.activeCodeUsers.size() < 2) {
+                    voiceChannel.isActive = false;
+                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", "XP");
+                }
+
             }
         }
 
@@ -63,45 +78,49 @@ public class VoiceListener extends ListenerAdapter {
 
         if (!member.getVoiceState().isMuted() && !member.getVoiceState().isDeafened()) {
             voiceChannel.activeCodeUsers.add(codeUser);
+
+            if (!voiceChannel.isActive && voiceChannel.activeCodeUsers.size() >= 2) {
+                voiceChannel.isActive = true;
+                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", "XP");
+            }
+
         } else {
             voiceChannel.activeCodeUsers.remove(codeUser);
+
+            if (voiceChannel.isActive && voiceChannel.activeCodeUsers.size() < 2) {
+                voiceChannel.isActive = false;
+                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", "XP");
+            }
+
         }
     }
 
     private class VoiceChannel {
+        public String voiceChannelName;
         public int numberOfUsers;
+        public boolean isActive;
 
         public Set<CodeUser> activeCodeUsers = new HashSet<>();
 
         public ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-        public VoiceChannel() {
+        public VoiceChannel(String voiceChannelName) {
+            this.voiceChannelName = voiceChannelName;
             this.numberOfUsers = 0;
+            this.isActive = false;
 
             executorService.scheduleAtFixedRate(this::updateUserValues, 0, 60, TimeUnit.SECONDS);
         }
 
         private void updateUserValues() {
-            if (activeCodeUsers.size() >= 2) {
+            if (isActive) {
                 for (CodeUser codeUser : activeCodeUsers) {
                     codeUser.addNbVoiceTimeSpent(1);
                     DatabaseManager.updateNbVoiceTimeSpent(codeUser.getUserId(), codeUser.getNbVoiceTimeSpent());
 
-                    long userId = codeUser.getUserId();
-
-                    int levelBefore = LevelManager.getLevelFromXP(codeUser.getXp());
-
-                    codeUser.addXp(LevelManager.xp_per_min_voice);
-                    DatabaseManager.updateXp(userId, codeUser.getXp());
-
-                    int levelAfter = LevelManager.getLevelFromXP(codeUser.getXp());
-                    if (levelBefore != levelAfter) {
-                        codeUser.setLevel(levelAfter);
-                        DatabaseManager.updateLevel(userId, levelAfter);
-                        LevelManager.sendLevelUpMessage(userId, levelAfter);
-                        LevelManager.checkAndUpdateUserRole(userId, levelAfter);
-                    }
+                    LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_min_voice);
                 }
+                LOGs.sendLog("XP donné à tous les utilisateurs actifs du salon vocal " + voiceChannelName, "XP");
             } else {
                 for (CodeUser codeUser : activeCodeUsers) {
                     codeUser.addNbVoiceTimeSpent(1);

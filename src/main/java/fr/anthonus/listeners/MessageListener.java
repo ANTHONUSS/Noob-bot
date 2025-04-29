@@ -22,29 +22,14 @@ public class MessageListener extends ListenerAdapter {
         codeUser.addNbMessageSent(1);
         DatabaseManager.updateNbMessagesSent(userId, codeUser.getNbMessagesSent());
 
-        //Gestion de l'ajout d'XP
+        // verification dernier message envoyé
         if (codeUser != null && codeUser.getLastMessageTime() != null &&
             Instant.now().minusSeconds(SettingsManager.timeBeforeXP).isBefore(codeUser.getLastMessageTime())) {
             return;
         }
 
-        if (codeUser.getXp() >= LevelManager.maxXp) {
-            return;
-        }
-
-        // Gestion de passage de niveau et/ou palier
-        int levelBefore = LevelManager.getLevelFromXP(codeUser.getXp());
-
-        codeUser.addXp(LevelManager.xp_per_msg);
-        DatabaseManager.updateXp(userId, codeUser.getXp());
-
-        int levelAfter = LevelManager.getLevelFromXP(codeUser.getXp());
-        if (levelBefore != levelAfter) {
-            codeUser.setLevel(levelAfter);
-            DatabaseManager.updateLevel(userId, levelAfter);
-            LevelManager.sendLevelUpMessage(userId, levelAfter);
-            LevelManager.checkAndUpdateUserRole(userId, levelAfter);
-        }
+        // ajout de l'xp
+        LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_msg);
 
         codeUser.setLastMessageTime(Instant.now());
 

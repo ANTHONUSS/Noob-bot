@@ -1,6 +1,7 @@
 package fr.anthonus.utils.managers;
 
 import fr.anthonus.LOGs;
+import fr.anthonus.utils.CodeUser;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
@@ -98,6 +99,8 @@ public class LevelManager {
         if (correctRole.getIdLong() != paliersRoles[0])
             sendPalierChangeMessage(userId, correctRole);
 
+        LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est monté au palier " + correctRole.getName(), "XP");
+
     }
 
     public static void sendLevelUpMessage(long userId, int level) {
@@ -138,5 +141,30 @@ public class LevelManager {
         }
 
         return null;
+    }
+
+    public static void addXpAndVerify(CodeUser codeUser, int xp) {
+        // Vérification si l'utilisateur a déjà atteint le maximum d'XP
+        if (codeUser.getXp() >= maxXp) {
+            return;
+        }
+
+        long userId = codeUser.getUserId();
+
+        // Gestion de passage de niveau et/ou palier
+        int levelBefore = getLevelFromXP(codeUser.getXp());
+
+        codeUser.addXp(xp);
+        DatabaseManager.updateXp(userId, codeUser.getXp());
+
+        int levelAfter = getLevelFromXP(codeUser.getXp());
+
+        if (levelBefore != levelAfter) {
+            LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est passé au niveau " + levelAfter, "XP");
+            codeUser.setLevel(levelAfter);
+            DatabaseManager.updateLevel(userId, levelAfter);
+            sendLevelUpMessage(userId, levelAfter);
+            checkAndUpdateUserRole(userId, levelAfter);
+        }
     }
 }
