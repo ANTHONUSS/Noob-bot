@@ -14,7 +14,7 @@ public class LevelManager {
     private static int b = 25;
 
     public static int xp_per_msg = 10;
-    public static int xp_per_min_voice = 5;
+    public static int xp_per_min_voice = 10;
     public static int maxXp = 752500;
 
     /**
