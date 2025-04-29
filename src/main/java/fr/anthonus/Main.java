@@ -29,7 +29,6 @@ public class Main {
     public static Guild guild;
 
 
-
     public static void main(String[] args) throws InterruptedException {
         // Load logs
         LOGs.addLogType("LOADING", 53, 74, 255);

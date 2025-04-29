@@ -9,6 +9,9 @@ import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.messages.MessagePoll;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class WinReactionCommand extends Command {
     private final long messageId;
     private final int xp;
@@ -31,12 +34,16 @@ public class WinReactionCommand extends Command {
                 return;
             }
 
+            List<CodeUser> userList = new ArrayList<>();
             for (MessagePoll.Answer answer : poll.getAnswers()) {
                 message.retrievePollVoters(answer.getId()).queue(voters -> {
                     for (User voter : voters) {
                         CodeUser codeUser = CodeUserManager.users.get(voter.getIdLong());
-                        LevelManager.addXpAndVerify(codeUser, xp);
-                        LOGs.sendLog("Ajout de " + xp + " XP à " + voter.getName() + " pour avoir voté.", "XP");
+                        if (!userList.contains(codeUser)) {
+                            userList.add(codeUser);
+                            LevelManager.addXpAndVerify(codeUser, xp);
+                            LOGs.sendLog("Ajout de " + xp + " XP à " + voter.getName() + " pour avoir voté.", "XP");
+                        }
 
                     }
 
