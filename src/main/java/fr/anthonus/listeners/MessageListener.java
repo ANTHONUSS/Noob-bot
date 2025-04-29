@@ -18,6 +18,11 @@ public class MessageListener extends ListenerAdapter {
         long userId = event.getAuthor().getIdLong();
         CodeUser codeUser = CodeUserManager.users.get(userId);
 
+        // Ajout d'un message envoyé pour l'utilisateur
+        codeUser.addNbMessageSent(1);
+        DatabaseManager.updateNbMessagesSent(userId, codeUser.getNbMessagesSent());
+
+        //Gestion de l'ajout d'XP
         if (codeUser != null && codeUser.getLastMessageTime() != null &&
             Instant.now().minusSeconds(SettingsManager.timeBeforeXP).isBefore(codeUser.getLastMessageTime())) {
             return;
@@ -27,6 +32,7 @@ public class MessageListener extends ListenerAdapter {
             return;
         }
 
+        // Gestion de passage de niveau et/ou palier
         int levelBefore = LevelManager.getLevelFromXP(codeUser.getXp());
 
         codeUser.addXp(LevelManager.xp_per_msg);

@@ -78,12 +78,15 @@ public class VoiceListener extends ListenerAdapter {
         public VoiceChannel() {
             this.numberOfUsers = 0;
 
-            executorService.scheduleAtFixedRate(this::giveXP, 0, 60, TimeUnit.SECONDS);
+            executorService.scheduleAtFixedRate(this::updateUserValues, 0, 60, TimeUnit.SECONDS);
         }
 
-        private void giveXP() {
+        private void updateUserValues() {
             if (activeCodeUsers.size() >= 2) {
                 for (CodeUser codeUser : activeCodeUsers) {
+                    codeUser.addNbVoiceTimeSpent(1);
+                    DatabaseManager.updateNbVoiceTimeSpent(codeUser.getUserId(), codeUser.getNbVoiceTimeSpent());
+
                     long userId = codeUser.getUserId();
 
                     int levelBefore = LevelManager.getLevelFromXP(codeUser.getXp());
@@ -98,6 +101,11 @@ public class VoiceListener extends ListenerAdapter {
                         LevelManager.sendLevelUpMessage(userId, levelAfter);
                         LevelManager.checkAndUpdateUserRole(userId, levelAfter);
                     }
+                }
+            } else {
+                for (CodeUser codeUser : activeCodeUsers) {
+                    codeUser.addNbVoiceTimeSpent(1);
+                    DatabaseManager.updateNbVoiceTimeSpent(codeUser.getUserId(), codeUser.getNbVoiceTimeSpent());
                 }
             }
         }

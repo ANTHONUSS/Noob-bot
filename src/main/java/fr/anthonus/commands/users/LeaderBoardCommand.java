@@ -31,7 +31,26 @@ public class LeaderBoardCommand extends Command {
         int i = 1;
         for (CodeUser user : sortedUsers) {
             String userName = jda.retrieveUserById(user.getUserId()).complete().getName();
-            embed.addField(i++ +". " + userName, "**XP :** " + user.getXp() + " | **Level :** " + user.getLevel() + " | **Palier :** " + LevelManager.getPalier(user.getLevel()).getName(), false);
+
+            String time;
+            int minutes = user.getNbVoiceTimeSpent();
+            if (minutes < 60) {
+                time = minutes + " minute(s)";
+            } else {
+                int hours = minutes / 60;
+                int remainingMinutes = minutes % 60;
+                time = hours + " heure(s) " + (remainingMinutes > 0 ? remainingMinutes + " minute(s)" : "");
+            }
+
+            embed.addField(i++ +". " + userName,
+                    "**XP :** " + user.getXp() +
+                    "\n**Niveau :** " + user.getLevel() +
+                    "\n**Palier :** " + LevelManager.getPalier(user.getLevel()).getName() +
+                    "\n**Nombre de messages envoyés :** " + user.getNbMessagesSent() +
+                    "\n**Temps passé en voc de-mute :** " + time,
+                    false);
+            if (i == sortedUsers.size())
+                embed.addBlankField(false);
         }
 
         currentEvent.replyEmbeds(embed.build()).queue();

@@ -41,17 +41,29 @@ public class StatsCommand extends Command {
             return;
         }
 
+        String time;
+        int minutes = codeUser.getNbVoiceTimeSpent();
+        if (minutes < 60) {
+            time = minutes + " minute(s)";
+        } else {
+            int hours = minutes / 60;
+            int remainingMinutes = minutes % 60;
+            time = hours + " heure(s) " + (remainingMinutes > 0 ? remainingMinutes + " minute(s)" : "");
+        }
+
         EmbedBuilder embed = new EmbedBuilder();
         embed.setTitle("Statistiques de " + name);
         embed.addField("XP", String.valueOf(codeUser.getXp()), true);
         embed.addField("Niveau", String.valueOf(codeUser.getLevel()), true);
+        embed.addField("Palier actuel", LevelManager.getPalier(codeUser.getLevel()).getName(), true);
 
         if (codeUser.getXp() < LevelManager.maxXp) {
             embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(codeUser.getXp())), false);
             embed.addField("Nombre de niveaux pour le prochain palier", String.valueOf(LevelManager.getLevelsForNextPalier(codeUser.getLevel())), false);
         }
 
-        embed.addField("Palier actuel", LevelManager.getPalier(codeUser.getLevel()).getName(), false);
+        embed.addField("Nombre de messages envoyés", String.valueOf(codeUser.getNbMessagesSent()), false);
+        embed.addField("Temps passé en voc de-mute", time, false);
 
         currentEvent.replyEmbeds(embed.build()).queue();
     }

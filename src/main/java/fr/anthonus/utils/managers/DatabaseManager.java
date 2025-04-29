@@ -18,7 +18,9 @@ public class DatabaseManager {
             String createTableQuery = "CREATE TABLE IF NOT EXISTS Users (" +
                     "user_id INTEGER PRIMARY KEY," +
                     "xp INTEGER NOT NULL," +
-                    "level INTEGER NOT NULL" +
+                    "level INTEGER NOT NULL," +
+                    "nbMessagesSent INTEGER NOT NULL," +
+                    "nbVoiceTimeSpent INTEGER NOT NULL" +
                     ");";
 
             conn.createStatement().execute(createTableQuery);
@@ -34,17 +36,21 @@ public class DatabaseManager {
      * @param codeUser L'utilisateur à sauvegarder.
      */
     public static void saveUser(CodeUser codeUser){
-        String query = "INSERT INTO Users (user_id, xp, level) VALUES (?, ?, ?) " +
-                "ON CONFLICT(user_id) DO UPDATE SET xp = ?, level = ?;";
+        String query = "INSERT INTO Users (user_id, xp, level, nbMessagesSent, nbVoiceTimeSpent) VALUES (?, ?, ?, ?, ?) " +
+                "ON CONFLICT(user_id) DO UPDATE SET xp = ?, level = ?, nbMessagesSent = ?, nbVoiceTimeSpent = ?;";
 
         try (Connection conn = DriverManager.getConnection(DB_URL)) {
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setLong(1, codeUser.getUserId());
             stmt.setInt(2, codeUser.getXp());
             stmt.setInt(3, codeUser.getLevel());
+            stmt.setInt(4, codeUser.getNbMessagesSent());
+            stmt.setInt(5, codeUser.getNbVoiceTimeSpent());
 
-            stmt.setInt(4, codeUser.getXp());
-            stmt.setInt(5, codeUser.getLevel());
+            stmt.setInt(6, codeUser.getXp());
+            stmt.setInt(7, codeUser.getLevel());
+            stmt.setInt(8, codeUser.getNbMessagesSent());
+            stmt.setInt(9, codeUser.getNbVoiceTimeSpent());
             stmt.executeUpdate();
 
             LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(codeUser.getUserId()).complete().getName(), "FILE_LOADING");
@@ -60,7 +66,7 @@ public class DatabaseManager {
      * @return L'utilisateur chargé, ou null s'il n'existe pas.
      */
     public static CodeUser loadUser(long userId) {
-        String query = "SELECT xp, level FROM Users WHERE user_id = ?;";
+        String query = "SELECT xp, level, nbMessagesSent, nbVoiceTimeSpent FROM Users WHERE user_id = ?;";
 
         try (Connection conn = DriverManager.getConnection(DB_URL)) {
             PreparedStatement stmt = conn.prepareStatement(query);
@@ -70,8 +76,11 @@ public class DatabaseManager {
             if (result.next()) {
                 int xp = result.getInt("xp");
                 int level = result.getInt("level");
+                int nbMessagesSent = result.getInt("nbMessagesSent");
+                int nbVoiceTimeSpent = result.getInt("nbVoiceTimeSpent");
 
-                return new CodeUser(userId, xp, level);
+
+                return new CodeUser(userId, xp, level, nbMessagesSent, nbVoiceTimeSpent);
             }
 
         } catch (SQLException e) {
@@ -122,6 +131,40 @@ public class DatabaseManager {
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la mise à jour du niveau pour l'utilisateur : " + e, "ERROR");
+        }
+    }
+
+    public static void updateNbMessagesSent(long userId, int newNbMessagesSent) {
+        String query = "UPDATE Users SET nbMessagesSent = ? WHERE user_id = ?;";
+
+        try (Connection conn = DriverManager.getConnection(DB_URL)) {
+            PreparedStatement stmt = conn.prepareStatement(query);
+            stmt.setInt(1, newNbMessagesSent);
+            stmt.setLong(2, userId);
+            stmt.executeUpdate();
+
+            // En commentaire parce que ça spam le log
+//            LOGs.sendLog("Nombre de messages envoyés mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+
+        } catch (SQLException e) {
+            LOGs.sendLog("Erreur lors de la mise à jour du nombre de messages envoyés pour l'utilisateur : " + e, "ERROR");
+        }
+    }
+
+    public static void updateNbVoiceTimeSpent(long userId, int newNbVoiceTimeSpent) {
+        String query = "UPDATE Users SET nbVoiceTimeSpent = ? WHERE user_id = ?;";
+
+        try (Connection conn = DriverManager.getConnection(DB_URL)) {
+            PreparedStatement stmt = conn.prepareStatement(query);
+            stmt.setInt(1, newNbVoiceTimeSpent);
+            stmt.setLong(2, userId);
+            stmt.executeUpdate();
+
+            // En commentaire parce que ça spam le log
+//            LOGs.sendLog("Temps passé en voc mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+
+        } catch (SQLException e) {
+            LOGs.sendLog("Erreur lors de la mise à jour du temps passé en voc pour l'utilisateur : " + e, "ERROR");
         }
     }
 }

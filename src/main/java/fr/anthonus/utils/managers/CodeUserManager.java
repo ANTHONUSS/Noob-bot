@@ -31,7 +31,7 @@ public class CodeUserManager {
                 CodeUser codeUser = DatabaseManager.loadUser(userId);
 
                 if (codeUser == null) {
-                    codeUser = new CodeUser(userId, 0, 0);
+                    codeUser = new CodeUser(userId, 0, 0, 0, 0);
                     DatabaseManager.saveUser(codeUser);
                     users.put(userId, codeUser);
                     LOGs.sendLog("Nouvel utilisateur ajouté et chargé : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
