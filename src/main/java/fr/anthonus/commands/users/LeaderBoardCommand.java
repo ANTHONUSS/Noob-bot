@@ -1,12 +1,13 @@
 package fr.anthonus.commands.users;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.commands.Command;
 import fr.anthonus.utils.CodeUser;
 import fr.anthonus.utils.managers.CodeUserManager;
 import fr.anthonus.utils.managers.LevelManager;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import fr.anthonus.logs.logTypes.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ public class LeaderBoardCommand extends Command {
     public LeaderBoardCommand(SlashCommandInteractionEvent event) {
         super(event);
 
-        LOGs.sendLog("Commande /leaderboard initialisée", "COMMAND");
+        LOGs.sendLog("Commande /leaderboard initialisée", CustomLogType.COMMAND);
     }
 
     @Override

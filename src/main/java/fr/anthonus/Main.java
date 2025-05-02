@@ -4,6 +4,8 @@ import fr.anthonus.listeners.JoinEventListener;
 import fr.anthonus.listeners.MessageListener;
 import fr.anthonus.listeners.SlashCommandListener;
 import fr.anthonus.listeners.VoiceListener;
+import fr.anthonus.logs.LOGs;
+import fr.anthonus.logs.logTypes.*;
 import fr.anthonus.utils.managers.DatabaseManager;
 import fr.anthonus.utils.managers.SettingsManager;
 import fr.anthonus.utils.managers.CodeUserManager;
@@ -30,57 +32,47 @@ public class Main {
 
 
     public static void main(String[] args) throws InterruptedException {
-        // Load logs
-        LOGs.addLogType("LOADING", 53, 74, 255);
-        LOGs.addLogType("FILE_LOADING", 130, 0, 255);
-        LOGs.addLogType("COMMAND", 255, 172, 53);
-        LOGs.addLogType("WELCOME", 0, 143, 255);
-        LOGs.addLogType("XP", 134, 55, 0);
-        LOGs.addLogType("WARNING", 255, 255, 0);
-        LOGs.addLogType("DEBUG", 255, 171, 247);
-
-
         Dotenv dotenv = Dotenv.configure()
                 .directory("conf")
                 .load();
 
-        LOGs.sendLog("Chargement du token Discord...", "LOADING");
+        LOGs.sendLog("Chargement du token Discord...", CustomLogType.LOADING);
         tokenDiscord = dotenv.get("DISCORD_TOKEN");
         if (tokenDiscord == null || tokenDiscord.isEmpty()) {
-            LOGs.sendLog("Token Discord non trouvé dans le fichier .env", "ERROR");
+            LOGs.sendLog("Token Discord non trouvé dans le fichier .env", DefaultLogType.ERROR);
             return;
         } else {
-            LOGs.sendLog("Token Discord chargé", "LOADING");
+            LOGs.sendLog("Token Discord chargé", CustomLogType.LOADING);
         }
 
-        LOGs.sendLog("Chargement de l'identifiant du serveur...", "LOADING");
+        LOGs.sendLog("Chargement de l'identifiant du serveur...", CustomLogType.LOADING);
         String guildIdString = dotenv.get("SERVER_ID");
         if (guildIdString == null || guildIdString.isEmpty()) {
-            LOGs.sendLog("Identifiant du serveur non trouvé dans le fichier .env", "ERROR");
+            LOGs.sendLog("Identifiant du serveur non trouvé dans le fichier .env", DefaultLogType.ERROR);
             return;
         } else {
             try {
                 guildId = Long.parseLong(guildIdString);
             } catch (NumberFormatException e) {
-                LOGs.sendLog("Identifiant du serveur invalide dans le fichier .env", "ERROR");
+                LOGs.sendLog("Identifiant du serveur invalide dans le fichier .env", DefaultLogType.ERROR);
                 return;
             }
-            LOGs.sendLog("Identifiant du serveur chargé", "LOADING");
+            LOGs.sendLog("Identifiant du serveur chargé", CustomLogType.LOADING);
         }
 
 
-        LOGs.sendLog("Chargement du bot...", "LOADING");
+        LOGs.sendLog("Chargement du bot...", CustomLogType.LOADING);
         initBot();
         guild = jda.getGuildById(guildId);
 
-        LOGs.sendLog("Chargement des paramètres...", "LOADING");
+        LOGs.sendLog("Chargement des paramètres...", CustomLogType.LOADING);
         SettingsManager.loadSettings();
-        LOGs.sendLog("Paramètres chargés", "LOADING");
+        LOGs.sendLog("Paramètres chargés", CustomLogType.LOADING);
 
-        LOGs.sendLog("Chargement de la base de donnée...", "LOADING");
+        LOGs.sendLog("Chargement de la base de donnée...", CustomLogType.LOADING);
         DatabaseManager.initDatabase();
 
-        LOGs.sendLog("Chargement des utilisateurs...", "LOADING");
+        LOGs.sendLog("Chargement des utilisateurs...", CustomLogType.LOADING);
         CodeUserManager.loadUsers();
 
     }
@@ -101,10 +93,10 @@ public class Main {
                 .build();
 
         jda.awaitReady();
-        LOGs.sendLog("Bot démarré", "LOADING");
+        LOGs.sendLog("Bot démarré", CustomLogType.LOADING);
 
         //Load the slash commands
-        LOGs.sendLog("Chargement des commandes...", "LOADING");
+        LOGs.sendLog("Chargement des commandes...", CustomLogType.LOADING);
         CommandListUpdateAction commands = jda.updateCommands();
         commands.addCommands(
                 // DEFAULT COMMANDS
@@ -134,6 +126,6 @@ public class Main {
 
         );
         commands.queue();
-        LOGs.sendLog("Commandes chargées", "LOADING");
+        LOGs.sendLog("Commandes chargées", CustomLogType.LOADING);
     }
 }

@@ -1,6 +1,6 @@
 package fr.anthonus.listeners;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.utils.CodeUser;
 import fr.anthonus.utils.managers.CodeUserManager;
 import fr.anthonus.utils.managers.DatabaseManager;
@@ -10,6 +10,7 @@ import net.dv8tion.jda.api.entities.channel.unions.AudioChannelUnion;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceMuteEvent;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceUpdateEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import fr.anthonus.logs.logTypes.*;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -41,7 +42,7 @@ public class VoiceListener extends ListenerAdapter {
 
                 if (!voiceChannel.isActive && voiceChannel.activeCodeUsers.size() >= 2) {
                     voiceChannel.isActive = true;
-                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", "XP");
+                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", CustomLogType.XP);
                 }
 
             }
@@ -58,7 +59,7 @@ public class VoiceListener extends ListenerAdapter {
 
                 if (voiceChannel.isActive && voiceChannel.activeCodeUsers.size() < 2) {
                     voiceChannel.isActive = false;
-                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", "XP");
+                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", CustomLogType.XP);
                 }
 
             }
@@ -81,7 +82,7 @@ public class VoiceListener extends ListenerAdapter {
 
             if (!voiceChannel.isActive && voiceChannel.activeCodeUsers.size() >= 2) {
                 voiceChannel.isActive = true;
-                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", "XP");
+                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", CustomLogType.XP);
             }
 
         } else {
@@ -89,7 +90,7 @@ public class VoiceListener extends ListenerAdapter {
 
             if (voiceChannel.isActive && voiceChannel.activeCodeUsers.size() < 2) {
                 voiceChannel.isActive = false;
-                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", "XP");
+                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", CustomLogType.XP);
             }
 
         }
@@ -120,7 +121,7 @@ public class VoiceListener extends ListenerAdapter {
 
                     LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_min_voice);
                 }
-                LOGs.sendLog("XP donné à tous les utilisateurs actifs du salon vocal " + voiceChannelName, "XP");
+                LOGs.sendLog("XP donné à tous les utilisateurs actifs du salon vocal " + voiceChannelName, CustomLogType.XP);
             } else {
                 for (CodeUser codeUser : activeCodeUsers) {
                     codeUser.addNbVoiceTimeSpent(1);

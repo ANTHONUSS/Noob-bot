@@ -1,6 +1,6 @@
 package fr.anthonus.commands.admin;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.commands.Command;
 import fr.anthonus.utils.CodeUser;
 import fr.anthonus.utils.managers.CodeUserManager;
@@ -8,6 +8,7 @@ import fr.anthonus.utils.managers.LevelManager;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.messages.MessagePoll;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import fr.anthonus.logs.logTypes.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class WinReactionCommand extends Command {
         this.messageId = messageId;
         this.xp = xp;
 
-        LOGs.sendLog("Commande /win-reaction initialisée", "COMMAND");
+        LOGs.sendLog("Commande /win-reaction initialisée", CustomLogType.COMMAND);
     }
 
     @Override
@@ -30,7 +31,6 @@ public class WinReactionCommand extends Command {
             MessagePoll poll = message.getPoll();
             if (poll == null) {
                 currentEvent.reply("## :x: Le message n'est pas un sondage.").setEphemeral(true).queue();
-                LOGs.sendLog("Le message n'est pas un sondage", "DEBUG");
                 return;
             }
 
@@ -40,9 +40,9 @@ public class WinReactionCommand extends Command {
                     for (User voter : voters) {
                         CodeUser codeUser = CodeUserManager.users.get(voter.getIdLong());
                         if (!userList.contains(codeUser)) {
+                            LOGs.sendLog("Ajout de " + xp + " XP à " + voter.getName() + " pour avoir voté.", CustomLogType.XP);
                             userList.add(codeUser);
                             LevelManager.addXpAndVerify(codeUser, xp);
-                            LOGs.sendLog("Ajout de " + xp + " XP à " + voter.getName() + " pour avoir voté.", "XP");
                         }
 
                     }

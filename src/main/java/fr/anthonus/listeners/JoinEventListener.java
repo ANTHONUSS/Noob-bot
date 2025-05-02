@@ -1,6 +1,6 @@
 package fr.anthonus.listeners;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.utils.*;
 import fr.anthonus.utils.managers.DatabaseManager;
 import fr.anthonus.utils.managers.LevelManager;
@@ -13,13 +13,14 @@ import net.dv8tion.jda.api.events.guild.member.GuildMemberRemoveEvent;
 import net.dv8tion.jda.api.events.guild.member.update.GuildMemberUpdatePendingEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import java.util.concurrent.ThreadLocalRandom;
+import fr.anthonus.logs.logTypes.*;
 
 import static fr.anthonus.Main.*;
 
 public class JoinEventListener extends ListenerAdapter {
     @Override
     public void onGuildMemberJoin(GuildMemberJoinEvent event) {
-        LOGs.sendLog("Un nouvel utilisateur a rejoint le serveur : " + event.getUser().getName(), "WELCOME");
+        LOGs.sendLog("Un nouvel utilisateur a rejoint le serveur : " + event.getUser().getName(), CustomLogType.WELCOME);
 
         sendWelcomeMessage(event);
 
@@ -28,7 +29,7 @@ public class JoinEventListener extends ListenerAdapter {
 
     @Override
     public void onGuildMemberRemove(GuildMemberRemoveEvent event) {
-        LOGs.sendLog("Un utilisateur a quitté le serveur : " + event.getUser().getName(), "WELCOME");
+        LOGs.sendLog("Un utilisateur a quitté le serveur : " + event.getUser().getName(), CustomLogType.WELCOME);
 
         sendGoodbyeMessage(event);
 
@@ -43,7 +44,7 @@ public class JoinEventListener extends ListenerAdapter {
             long userId = event.getUser().getIdLong();
             int userLevel = CodeUserManager.users.get(userId).getLevel();
             LevelManager.checkAndUpdateUserRole(userId, userLevel);
-            LOGs.sendLog("L'utilisateur " + event.getUser().getName() + " a accepté les règles et est maintenant un membre actif.", "WELCOME");
+            LOGs.sendLog("L'utilisateur " + event.getUser().getName() + " a accepté les règles et est maintenant un membre actif.", CustomLogType.WELCOME);
         }
     }
 
@@ -92,11 +93,11 @@ public class JoinEventListener extends ListenerAdapter {
             DatabaseManager.saveUser(codeUser);
             CodeUserManager.users.put(userId, codeUser);
 
-            LOGs.sendLog("Nouvel utilisateur ajouté à la base de données et chargé en mémoire : " + event.getUser().getName(), "FILE_LOADING");
+            LOGs.sendLog("Nouvel utilisateur ajouté à la base de données et chargé en mémoire : " + event.getUser().getName(), CustomLogType.FILE_LOADING);
         } else {
-            LOGs.sendLog("Utilisateur déjà présent dans la base de données : " + event.getUser().getName() + ", chargement en mémoire...", "FILE_LOADING");
+            LOGs.sendLog("Utilisateur déjà présent dans la base de données : " + event.getUser().getName() + ", chargement en mémoire...", CustomLogType.FILE_LOADING);
             CodeUserManager.users.put(userId, codeUser);
-            LOGs.sendLog("Utilisateur chargé en mémoire : " + event.getUser().getName(), "FILE_LOADING");
+            LOGs.sendLog("Utilisateur chargé en mémoire : " + event.getUser().getName(), CustomLogType.FILE_LOADING);
         }
 
     }
@@ -136,6 +137,6 @@ public class JoinEventListener extends ListenerAdapter {
     private void removeUserFromMemory(GuildMemberRemoveEvent event) {
         long userId = event.getUser().getIdLong();
         CodeUserManager.users.remove(userId);
-        LOGs.sendLog("Utilisateur supprimé de la mémoire : " + event.getUser().getName(), "FILE_LOADING");
+        LOGs.sendLog("Utilisateur supprimé de la mémoire : " + event.getUser().getName(), CustomLogType.FILE_LOADING);
     }
 }

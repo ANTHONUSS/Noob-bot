@@ -1,12 +1,13 @@
 package fr.anthonus.utils.managers;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.utils.CodeUser;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
+import fr.anthonus.logs.logTypes.*;
 
 import static fr.anthonus.Main.*;
 
@@ -69,7 +70,7 @@ public class LevelManager {
         }
 
         if (correctRole == null) {
-            LOGs.sendLog("Aucun rôle trouvé pour le niveau " + userLevel, "WARNING");
+            LOGs.sendLog("Aucun rôle trouvé pour le niveau " + userLevel, DefaultLogType.WARNING);
             return; // Aucun rôle trouvé pour ce niveau
         }
 
@@ -99,7 +100,7 @@ public class LevelManager {
         if (correctRole.getIdLong() != paliersRoles[0])
             sendPalierChangeMessage(userId, correctRole);
 
-        LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est monté au palier " + correctRole.getName(), "XP");
+        LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est monté au palier " + correctRole.getName(), CustomLogType.XP);
 
     }
 
@@ -160,7 +161,7 @@ public class LevelManager {
         int levelAfter = getLevelFromXP(codeUser.getXp());
 
         if (levelBefore != levelAfter) {
-            LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est passé au niveau " + levelAfter, "XP");
+            LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est passé au niveau " + levelAfter, CustomLogType.XP);
             codeUser.setLevel(levelAfter);
             DatabaseManager.updateLevel(userId, levelAfter);
             sendLevelUpMessage(userId, levelAfter);

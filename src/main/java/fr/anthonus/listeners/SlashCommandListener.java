@@ -1,6 +1,6 @@
 package fr.anthonus.listeners;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.commands.admin.ClearCommand;
 import fr.anthonus.commands.admin.ReloadDataCommand;
 import fr.anthonus.commands.admin.SetXpCommand;
@@ -12,6 +12,7 @@ import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import fr.anthonus.logs.logTypes.*;
 
 import static fr.anthonus.Main.*;
 
@@ -81,7 +82,7 @@ public class SlashCommandListener extends ListenerAdapter {
                 winReactionCommand.run();
             }
         }
-        LOGs.sendLog("Commande terminée", "COMMAND");
+        LOGs.sendLog("Commande terminée", CustomLogType.COMMAND);
 
     }
 }

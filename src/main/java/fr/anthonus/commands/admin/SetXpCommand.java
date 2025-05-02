@@ -1,12 +1,13 @@
 package fr.anthonus.commands.admin;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.commands.Command;
 import fr.anthonus.utils.managers.DatabaseManager;
 import fr.anthonus.utils.managers.LevelManager;
 import fr.anthonus.utils.CodeUser;
 import fr.anthonus.utils.managers.CodeUserManager;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import fr.anthonus.logs.logTypes.*;
 
 import static fr.anthonus.Main.jda;
 
@@ -19,7 +20,7 @@ public class SetXpCommand extends Command {
         this.targetUserId = targetUserId;
         this.xp = xp;
 
-        LOGs.sendLog("Commande /set-xp initialisée", "COMMAND");
+        LOGs.sendLog("Commande /set-xp initialisée", CustomLogType.COMMAND);
     }
 
     @Override

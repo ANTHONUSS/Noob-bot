@@ -1,6 +1,7 @@
 package fr.anthonus.utils.managers;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
+import fr.anthonus.logs.logTypes.*;
 import fr.anthonus.utils.CodeUser;
 
 import java.sql.*;
@@ -24,7 +25,7 @@ public class DatabaseManager {
                     ");";
 
             conn.createStatement().execute(createTableQuery);
-            LOGs.sendLog("Base de données initialisée avec succès", "LOADING");
+            LOGs.sendLog("Base de données initialisée avec succès", CustomLogType.LOADING);
 
         } catch (SQLException e) {
             throw new RuntimeException("Erreur lors du chargement de la base de données : " + e);
@@ -53,10 +54,10 @@ public class DatabaseManager {
             stmt.setInt(9, codeUser.getNbVoiceTimeSpent());
             stmt.executeUpdate();
 
-            LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(codeUser.getUserId()).complete().getName(), "FILE_LOADING");
+            LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(codeUser.getUserId()).complete().getName(), CustomLogType.FILE_LOADING);
 
         } catch (SQLException e) {
-            LOGs.sendLog("Erreur lors de la sauvegarde de l'utilisateur : " + e, "ERROR");
+            LOGs.sendLog("Erreur lors de la sauvegarde de l'utilisateur : " + e, DefaultLogType.ERROR);
         }
     }
 
@@ -84,7 +85,7 @@ public class DatabaseManager {
             }
 
         } catch (SQLException e) {
-            LOGs.sendLog("Erreur lors du chargement de l'utilisateur : " + e, "ERROR");
+            LOGs.sendLog("Erreur lors du chargement de l'utilisateur : " + e, DefaultLogType.ERROR);
         }
 
         return null;
@@ -105,11 +106,11 @@ public class DatabaseManager {
             stmt.executeUpdate();
 
             // En commentaire parce que ça spam le log
-//            LOGs.sendLog("XP mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+//            LOGs.sendLog("XP mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
 
 
         } catch (SQLException e) {
-            LOGs.sendLog("Erreur lors de la mise à jour de l'XP pour l'utilisateur : " + e, "ERROR");
+            LOGs.sendLog("Erreur lors de la mise à jour de l'XP pour l'utilisateur : " + e, DefaultLogType.ERROR);
         }
     }
 
@@ -127,10 +128,10 @@ public class DatabaseManager {
             stmt.setLong(2, userId);
             stmt.executeUpdate();
 
-            LOGs.sendLog("Niveau mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+            LOGs.sendLog("Niveau mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
 
         } catch (SQLException e) {
-            LOGs.sendLog("Erreur lors de la mise à jour du niveau pour l'utilisateur : " + e, "ERROR");
+            LOGs.sendLog("Erreur lors de la mise à jour du niveau pour l'utilisateur : " + e, DefaultLogType.ERROR);
         }
     }
 
@@ -144,10 +145,10 @@ public class DatabaseManager {
             stmt.executeUpdate();
 
             // En commentaire parce que ça spam le log
-//            LOGs.sendLog("Nombre de messages envoyés mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+//            LOGs.sendLog("Nombre de messages envoyés mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
 
         } catch (SQLException e) {
-            LOGs.sendLog("Erreur lors de la mise à jour du nombre de messages envoyés pour l'utilisateur : " + e, "ERROR");
+            LOGs.sendLog("Erreur lors de la mise à jour du nombre de messages envoyés pour l'utilisateur : " + e, DefaultLogType.ERROR);
         }
     }
 
@@ -161,10 +162,10 @@ public class DatabaseManager {
             stmt.executeUpdate();
 
             // En commentaire parce que ça spam le log
-//            LOGs.sendLog("Temps passé en voc mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+//            LOGs.sendLog("Temps passé en voc mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
 
         } catch (SQLException e) {
-            LOGs.sendLog("Erreur lors de la mise à jour du temps passé en voc pour l'utilisateur : " + e, "ERROR");
+            LOGs.sendLog("Erreur lors de la mise à jour du temps passé en voc pour l'utilisateur : " + e, DefaultLogType.ERROR);
         }
     }
 }

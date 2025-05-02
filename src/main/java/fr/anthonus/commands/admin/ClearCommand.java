@@ -1,9 +1,10 @@
 package fr.anthonus.commands.admin;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.commands.Command;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import fr.anthonus.logs.logTypes.*;
 
 public class ClearCommand extends Command {
     private int amount;
@@ -12,7 +13,7 @@ public class ClearCommand extends Command {
         super(event);
         this.amount = amount;
 
-        LOGs.sendLog("Commande /clear initialisée", "COMMAND");
+        LOGs.sendLog("Commande /clear initialisée", CustomLogType.COMMAND);
     }
 
     @Override
@@ -26,7 +27,7 @@ public class ClearCommand extends Command {
                                         + "\nUser : @" + currentEvent.getUser().getName()
                                         + "\nSalon : #" + currentEvent.getChannel().getName()
                                         + "\nAmount : " + amount,
-                                "COMMAND");
+                                CustomLogType.COMMAND);
                     },
                     failure -> {
                         currentEvent.reply("## ❌ Impossible de supprimer les messages : " + failure.getMessage()).setEphemeral(true).queue();
@@ -34,7 +35,7 @@ public class ClearCommand extends Command {
                                         + "\nUser : @" + currentEvent.getUser().getName()
                                         + "\nSalon : #" + currentEvent.getChannel().getName()
                                         + "\nAmount : " + amount,
-                                "ERROR");
+                                DefaultLogType.ERROR);
                     }
             );
         });

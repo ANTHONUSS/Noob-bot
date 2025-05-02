@@ -1,12 +1,13 @@
 package fr.anthonus.commands.users;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.commands.Command;
 import fr.anthonus.utils.CodeUser;
 import fr.anthonus.utils.managers.LevelManager;
 import fr.anthonus.utils.managers.CodeUserManager;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import fr.anthonus.logs.logTypes.*;
 
 import static fr.anthonus.Main.*;
 
@@ -17,7 +18,7 @@ public class StatsCommand extends Command {
         super(event);
         this.targetUserId = userId;
 
-        LOGs.sendLog("Commande /stats initialisée", "COMMAND");
+        LOGs.sendLog("Commande /stats initialisée", CustomLogType.COMMAND);
     }
 
     @Override
@@ -28,7 +29,7 @@ public class StatsCommand extends Command {
 
         if (codeUser == null) {
             currentEvent.reply("## :x: L'utilisateur n'existe pas.").setEphemeral(true).queue();
-            LOGs.sendLog("L'utilisateur n'existe pas : " + targetUserId, "ERROR");
+            LOGs.sendLog("L'utilisateur n'existe pas : " + targetUserId, DefaultLogType.ERROR);
             return;
         }
 
@@ -37,7 +38,7 @@ public class StatsCommand extends Command {
             name = jda.retrieveUserById(targetUserId).complete().getName();
         } catch (Exception e) {
             currentEvent.reply("## :x: Impossible de récupérer les informations de l'utilisateur.").setEphemeral(true).queue();
-            LOGs.sendLog("Erreur lors de la récupération de l'utilisateur : " + targetUserId, "ERROR");
+            LOGs.sendLog("Erreur lors de la récupération de l'utilisateur : " + targetUserId, DefaultLogType.ERROR);
             return;
         }
 

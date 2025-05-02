@@ -1,8 +1,9 @@
 package fr.anthonus.utils.managers;
 
-import fr.anthonus.LOGs;
+import fr.anthonus.logs.LOGs;
 import fr.anthonus.utils.CodeUser;
 import net.dv8tion.jda.api.entities.Member;
+import fr.anthonus.logs.logTypes.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +21,7 @@ public class CodeUserManager {
             throw new RuntimeException("Erreur lors du chargement des utilisateurs : le serveur n'a pas été trouvé");
         }
 
-        LOGs.sendLog("Chargement des utilisateurs du serveur...", "FILE_LOADING");
+        LOGs.sendLog("Chargement des utilisateurs du serveur...", CustomLogType.FILE_LOADING);
 
         guild.loadMembers().onSuccess(members -> {
             for (Member member : members) {
@@ -34,16 +35,16 @@ public class CodeUserManager {
                     codeUser = new CodeUser(userId, 0, 0, 0, 0);
                     DatabaseManager.saveUser(codeUser);
                     users.put(userId, codeUser);
-                    LOGs.sendLog("Nouvel utilisateur ajouté et chargé : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+                    LOGs.sendLog("Nouvel utilisateur ajouté et chargé : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
                 } else {
                     users.put(userId, codeUser);
-                    LOGs.sendLog("Utilisateur chargé : " + jda.retrieveUserById(userId).complete().getName(), "FILE_LOADING");
+                    LOGs.sendLog("Utilisateur chargé : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
                 }
             }
-            LOGs.sendLog("Tous les utilisateurs ont été chargés", "LOADING");
+            LOGs.sendLog("Tous les utilisateurs ont été chargés", CustomLogType.LOADING);
 
         }).onError(error -> {
-            LOGs.sendLog("Erreur lors du chargement des utilisateurs : " + error.getMessage(), "ERROR");
+            LOGs.sendLog("Erreur lors du chargement des utilisateurs : " + error.getMessage(), DefaultLogType.ERROR);
 
         });
     }
