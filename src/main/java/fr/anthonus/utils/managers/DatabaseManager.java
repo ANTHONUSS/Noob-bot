@@ -25,7 +25,7 @@ public class DatabaseManager {
                     ");";
 
             conn.createStatement().execute(createTableQuery);
-            LOGs.sendLog("Base de données initialisée avec succès", CustomLogType.LOADING);
+            LOGs.sendLog("Base de données initialisée avec succès", DefaultLogType.LOADING);
 
         } catch (SQLException e) {
             throw new RuntimeException("Erreur lors du chargement de la base de données : " + e);
@@ -54,7 +54,7 @@ public class DatabaseManager {
             stmt.setInt(9, codeUser.getNbVoiceTimeSpent());
             stmt.executeUpdate();
 
-            LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(codeUser.getUserId()).complete().getName(), CustomLogType.FILE_LOADING);
+            LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(codeUser.getUserId()).complete().getName(), DefaultLogType.FILE_LOADING);
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la sauvegarde de l'utilisateur : " + e, DefaultLogType.ERROR);
@@ -106,7 +106,7 @@ public class DatabaseManager {
             stmt.executeUpdate();
 
             // En commentaire parce que ça spam le log
-//            LOGs.sendLog("XP mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
+//            LOGs.sendLog("XP mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
 
 
         } catch (SQLException e) {
@@ -128,7 +128,7 @@ public class DatabaseManager {
             stmt.setLong(2, userId);
             stmt.executeUpdate();
 
-            LOGs.sendLog("Niveau mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
+            LOGs.sendLog("Niveau mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la mise à jour du niveau pour l'utilisateur : " + e, DefaultLogType.ERROR);
@@ -145,7 +145,7 @@ public class DatabaseManager {
             stmt.executeUpdate();
 
             // En commentaire parce que ça spam le log
-//            LOGs.sendLog("Nombre de messages envoyés mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
+//            LOGs.sendLog("Nombre de messages envoyés mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la mise à jour du nombre de messages envoyés pour l'utilisateur : " + e, DefaultLogType.ERROR);
@@ -162,7 +162,7 @@ public class DatabaseManager {
             stmt.executeUpdate();
 
             // En commentaire parce que ça spam le log
-//            LOGs.sendLog("Temps passé en voc mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
+//            LOGs.sendLog("Temps passé en voc mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la mise à jour du temps passé en voc pour l'utilisateur : " + e, DefaultLogType.ERROR);

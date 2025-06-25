@@ -17,13 +17,13 @@ public class SettingsManager {
         try (FileReader reader = new FileReader("data/settings.json")) {
             JsonObject json = JsonParser.parseReader(reader).getAsJsonObject();
             arrivalsChannel = json.get("arrivalsChannel").getAsLong();
-            LOGs.sendLog("Salon des arrivées chargé : " + arrivalsChannel, CustomLogType.FILE_LOADING);
+            LOGs.sendLog("Salon des arrivées chargé : " + arrivalsChannel, DefaultLogType.FILE_LOADING);
             levelInfoChannel = json.get("levelInfoChannel").getAsLong();
-            LOGs.sendLog("Salon des annonces de niveaux chargé : " + levelInfoChannel, CustomLogType.FILE_LOADING);
+            LOGs.sendLog("Salon des annonces de niveaux chargé : " + levelInfoChannel, DefaultLogType.FILE_LOADING);
             commandsChannel = json.get("commandsChannel").getAsLong();
-            LOGs.sendLog("Salon des commandes chargé : " + commandsChannel, CustomLogType.FILE_LOADING);
+            LOGs.sendLog("Salon des commandes chargé : " + commandsChannel, DefaultLogType.FILE_LOADING);
             timeBeforeXP = json.get("timeBeforeXP").getAsInt();
-            LOGs.sendLog("Temps avant XP chargé : " + timeBeforeXP, CustomLogType.FILE_LOADING);
+            LOGs.sendLog("Temps avant XP chargé : " + timeBeforeXP, DefaultLogType.FILE_LOADING);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

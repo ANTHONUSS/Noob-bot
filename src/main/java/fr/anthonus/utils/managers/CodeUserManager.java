@@ -21,7 +21,7 @@ public class CodeUserManager {
             throw new RuntimeException("Erreur lors du chargement des utilisateurs : le serveur n'a pas été trouvé");
         }
 
-        LOGs.sendLog("Chargement des utilisateurs du serveur...", CustomLogType.FILE_LOADING);
+        LOGs.sendLog("Chargement des utilisateurs du serveur...", DefaultLogType.FILE_LOADING);
 
         guild.loadMembers().onSuccess(members -> {
             for (Member member : members) {
@@ -35,13 +35,13 @@ public class CodeUserManager {
                     codeUser = new CodeUser(userId, 0, 0, 0, 0);
                     DatabaseManager.saveUser(codeUser);
                     users.put(userId, codeUser);
-                    LOGs.sendLog("Nouvel utilisateur ajouté et chargé : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
+                    LOGs.sendLog("Nouvel utilisateur ajouté et chargé : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
                 } else {
                     users.put(userId, codeUser);
-                    LOGs.sendLog("Utilisateur chargé : " + jda.retrieveUserById(userId).complete().getName(), CustomLogType.FILE_LOADING);
+                    LOGs.sendLog("Utilisateur chargé : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
                 }
             }
-            LOGs.sendLog("Tous les utilisateurs ont été chargés", CustomLogType.LOADING);
+            LOGs.sendLog("Tous les utilisateurs ont été chargés", DefaultLogType.LOADING);
 
         }).onError(error -> {
             LOGs.sendLog("Erreur lors du chargement des utilisateurs : " + error.getMessage(), DefaultLogType.ERROR);

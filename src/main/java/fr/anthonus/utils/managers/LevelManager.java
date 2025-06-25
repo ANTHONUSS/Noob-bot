@@ -100,7 +100,7 @@ public class LevelManager {
         if (correctRole.getIdLong() != paliersRoles[0])
             sendPalierChangeMessage(userId, correctRole);
 
-        LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est monté au palier " + correctRole.getName(), CustomLogType.XP);
+        LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est monté au palier " + correctRole.getName(), DefaultLogType.XP);
 
     }
 
@@ -161,7 +161,7 @@ public class LevelManager {
         int levelAfter = getLevelFromXP(codeUser.getXp());
 
         if (levelBefore != levelAfter) {
-            LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est passé au niveau " + levelAfter, CustomLogType.XP);
+            LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est passé au niveau " + levelAfter, DefaultLogType.XP);
             codeUser.setLevel(levelAfter);
             DatabaseManager.updateLevel(userId, levelAfter);
             sendLevelUpMessage(userId, levelAfter);

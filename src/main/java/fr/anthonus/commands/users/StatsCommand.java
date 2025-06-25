@@ -18,7 +18,7 @@ public class StatsCommand extends Command {
         super(event);
         this.targetUserId = userId;
 
-        LOGs.sendLog("Commande /stats initialisée", CustomLogType.COMMAND);
+        LOGs.sendLog("Commande /stats initialisée", DefaultLogType.COMMAND);
     }
 
     @Override

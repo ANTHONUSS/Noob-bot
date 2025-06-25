@@ -22,7 +22,7 @@ public class WinReactionCommand extends Command {
         this.messageId = messageId;
         this.xp = xp;
 
-        LOGs.sendLog("Commande /win-reaction initialisée", CustomLogType.COMMAND);
+        LOGs.sendLog("Commande /win-reaction initialisée", DefaultLogType.COMMAND);
     }
 
     @Override
@@ -40,7 +40,7 @@ public class WinReactionCommand extends Command {
                     for (User voter : voters) {
                         CodeUser codeUser = CodeUserManager.users.get(voter.getIdLong());
                         if (!userList.contains(codeUser)) {
-                            LOGs.sendLog("Ajout de " + xp + " XP à " + voter.getName() + " pour avoir voté.", CustomLogType.XP);
+                            LOGs.sendLog("Ajout de " + xp + " XP à " + voter.getName() + " pour avoir voté.", DefaultLogType.XP);
                             userList.add(codeUser);
                             LevelManager.addXpAndVerify(codeUser, xp);
                         }

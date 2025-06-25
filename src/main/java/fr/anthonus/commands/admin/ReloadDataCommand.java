@@ -11,7 +11,7 @@ public class ReloadDataCommand extends Command {
     public ReloadDataCommand(SlashCommandInteractionEvent event) {
         super(event);
 
-        LOGs.sendLog("Commande /reload-data initialisée", CustomLogType.COMMAND);
+        LOGs.sendLog("Commande /reload-data initialisée", DefaultLogType.COMMAND);
     }
 
     @Override
@@ -23,6 +23,6 @@ public class ReloadDataCommand extends Command {
 
         currentEvent.reply("Données rechargées avec succès !").setEphemeral(true).queue();
 
-        LOGs.sendLog("Données du bot rechargées", CustomLogType.COMMAND);
+        LOGs.sendLog("Données du bot rechargées", DefaultLogType.COMMAND);
     }
 }

@@ -20,7 +20,7 @@ public class SetXpCommand extends Command {
         this.targetUserId = targetUserId;
         this.xp = xp;
 
-        LOGs.sendLog("Commande /set-xp initialisée", CustomLogType.COMMAND);
+        LOGs.sendLog("Commande /set-xp initialisée", DefaultLogType.COMMAND);
     }
 
     @Override

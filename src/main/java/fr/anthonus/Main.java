@@ -36,16 +36,16 @@ public class Main {
                 .directory("conf")
                 .load();
 
-        LOGs.sendLog("Chargement du token Discord...", CustomLogType.LOADING);
+        LOGs.sendLog("Chargement du token Discord...", DefaultLogType.LOADING);
         tokenDiscord = dotenv.get("DISCORD_TOKEN");
         if (tokenDiscord == null || tokenDiscord.isEmpty()) {
             LOGs.sendLog("Token Discord non trouvé dans le fichier .env", DefaultLogType.ERROR);
             return;
         } else {
-            LOGs.sendLog("Token Discord chargé", CustomLogType.LOADING);
+            LOGs.sendLog("Token Discord chargé", DefaultLogType.LOADING);
         }
 
-        LOGs.sendLog("Chargement de l'identifiant du serveur...", CustomLogType.LOADING);
+        LOGs.sendLog("Chargement de l'identifiant du serveur...", DefaultLogType.LOADING);
         String guildIdString = dotenv.get("SERVER_ID");
         if (guildIdString == null || guildIdString.isEmpty()) {
             LOGs.sendLog("Identifiant du serveur non trouvé dans le fichier .env", DefaultLogType.ERROR);
@@ -57,22 +57,28 @@ public class Main {
                 LOGs.sendLog("Identifiant du serveur invalide dans le fichier .env", DefaultLogType.ERROR);
                 return;
             }
-            LOGs.sendLog("Identifiant du serveur chargé", CustomLogType.LOADING);
+            LOGs.sendLog("Identifiant du serveur chargé", DefaultLogType.LOADING);
         }
 
 
-        LOGs.sendLog("Chargement du bot...", CustomLogType.LOADING);
+        LOGs.sendLog("Chargement du bot...", DefaultLogType.LOADING);
         initBot();
         guild = jda.getGuildById(guildId);
+        if (guild == null) {
+            LOGs.sendLog("Le bot n'est pas dans le serveur avec l'ID " + guildId, DefaultLogType.ERROR);
+            return;
+        } else {
+            LOGs.sendLog("Bot connecté au serveur " + guild.getName(), DefaultLogType.LOADING);
+        }
 
-        LOGs.sendLog("Chargement des paramètres...", CustomLogType.LOADING);
+        LOGs.sendLog("Chargement des paramètres...", DefaultLogType.LOADING);
         SettingsManager.loadSettings();
-        LOGs.sendLog("Paramètres chargés", CustomLogType.LOADING);
+        LOGs.sendLog("Paramètres chargés", DefaultLogType.LOADING);
 
-        LOGs.sendLog("Chargement de la base de donnée...", CustomLogType.LOADING);
+        LOGs.sendLog("Chargement de la base de donnée...", DefaultLogType.LOADING);
         DatabaseManager.initDatabase();
 
-        LOGs.sendLog("Chargement des utilisateurs...", CustomLogType.LOADING);
+        LOGs.sendLog("Chargement des utilisateurs...", DefaultLogType.LOADING);
         CodeUserManager.loadUsers();
 
     }
@@ -93,10 +99,10 @@ public class Main {
                 .build();
 
         jda.awaitReady();
-        LOGs.sendLog("Bot démarré", CustomLogType.LOADING);
+        LOGs.sendLog("Bot démarré", DefaultLogType.LOADING);
 
         //Load the slash commands
-        LOGs.sendLog("Chargement des commandes...", CustomLogType.LOADING);
+        LOGs.sendLog("Chargement des commandes...", DefaultLogType.LOADING);
         CommandListUpdateAction commands = jda.updateCommands();
         commands.addCommands(
                 // DEFAULT COMMANDS
@@ -126,6 +132,6 @@ public class Main {
 
         );
         commands.queue();
-        LOGs.sendLog("Commandes chargées", CustomLogType.LOADING);
+        LOGs.sendLog("Commandes chargées", DefaultLogType.LOADING);
     }
 }

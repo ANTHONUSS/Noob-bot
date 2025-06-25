@@ -42,7 +42,7 @@ public class VoiceListener extends ListenerAdapter {
 
                 if (!voiceChannel.isActive && voiceChannel.activeCodeUsers.size() >= 2) {
                     voiceChannel.isActive = true;
-                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", CustomLogType.XP);
+                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", DefaultLogType.XP);
                 }
 
             }
@@ -59,7 +59,7 @@ public class VoiceListener extends ListenerAdapter {
 
                 if (voiceChannel.isActive && voiceChannel.activeCodeUsers.size() < 2) {
                     voiceChannel.isActive = false;
-                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", CustomLogType.XP);
+                    LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", DefaultLogType.XP);
                 }
 
             }
@@ -82,7 +82,7 @@ public class VoiceListener extends ListenerAdapter {
 
             if (!voiceChannel.isActive && voiceChannel.activeCodeUsers.size() >= 2) {
                 voiceChannel.isActive = true;
-                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", CustomLogType.XP);
+                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu actif", DefaultLogType.XP);
             }
 
         } else {
@@ -90,7 +90,7 @@ public class VoiceListener extends ListenerAdapter {
 
             if (voiceChannel.isActive && voiceChannel.activeCodeUsers.size() < 2) {
                 voiceChannel.isActive = false;
-                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", CustomLogType.XP);
+                LOGs.sendLog("Le salon vocal " + voiceChannel.voiceChannelName + " est devenu inactif", DefaultLogType.XP);
             }
 
         }
@@ -121,7 +121,7 @@ public class VoiceListener extends ListenerAdapter {
 
                     LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_min_voice);
                 }
-                LOGs.sendLog("XP donné à tous les utilisateurs actifs du salon vocal " + voiceChannelName, CustomLogType.XP);
+                LOGs.sendLog("XP donné à tous les utilisateurs actifs du salon vocal " + voiceChannelName, DefaultLogType.XP);
             } else {
                 for (CodeUser codeUser : activeCodeUsers) {
                     codeUser.addNbVoiceTimeSpent(1);

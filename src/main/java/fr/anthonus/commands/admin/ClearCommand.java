@@ -13,7 +13,7 @@ public class ClearCommand extends Command {
         super(event);
         this.amount = amount;
 
-        LOGs.sendLog("Commande /clear initialisée", CustomLogType.COMMAND);
+        LOGs.sendLog("Commande /clear initialisée", DefaultLogType.COMMAND);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class ClearCommand extends Command {
                                         + "\nUser : @" + currentEvent.getUser().getName()
                                         + "\nSalon : #" + currentEvent.getChannel().getName()
                                         + "\nAmount : " + amount,
-                                CustomLogType.COMMAND);
+                                DefaultLogType.COMMAND);
                     },
                     failure -> {
                         currentEvent.reply("## ❌ Impossible de supprimer les messages : " + failure.getMessage()).setEphemeral(true).queue();

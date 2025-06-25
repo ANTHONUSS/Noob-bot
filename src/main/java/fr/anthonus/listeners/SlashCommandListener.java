@@ -82,7 +82,7 @@ public class SlashCommandListener extends ListenerAdapter {
                 winReactionCommand.run();
             }
         }
-        LOGs.sendLog("Commande terminée", CustomLogType.COMMAND);
+        LOGs.sendLog("Commande terminée", DefaultLogType.COMMAND);
 
     }
 }

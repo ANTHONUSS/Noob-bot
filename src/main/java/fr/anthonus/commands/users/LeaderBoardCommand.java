@@ -18,7 +18,7 @@ public class LeaderBoardCommand extends Command {
     public LeaderBoardCommand(SlashCommandInteractionEvent event) {
         super(event);
 
-        LOGs.sendLog("Commande /leaderboard initialisée", CustomLogType.COMMAND);
+        LOGs.sendLog("Commande /leaderboard initialisée", DefaultLogType.COMMAND);
     }
 
     @Override
