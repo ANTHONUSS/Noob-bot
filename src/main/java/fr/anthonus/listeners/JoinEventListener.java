@@ -7,6 +7,7 @@ import fr.anthonus.utils.managers.LevelManager;
 import fr.anthonus.utils.managers.SettingsManager;
 import fr.anthonus.utils.managers.CodeUserManager;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberRemoveEvent;
@@ -48,7 +49,6 @@ public class JoinEventListener extends ListenerAdapter {
         }
     }
 
-
     private void sendWelcomeMessage(GuildMemberJoinEvent event) {
         TextChannel joinChannel = guild.getTextChannelById(SettingsManager.arrivalsChannel);
 
@@ -71,7 +71,7 @@ public class JoinEventListener extends ListenerAdapter {
         }
 
         String description = "Salut " + event.getUser().getName() + " ! Installe toi confortablement et n'hésite pas à aller voir le <id:guide> !\n" +
-                "N'oublie surtout pas d'aller lire l'onglet \"ressources\" pour être conscient des fonctionnalités du serveur !\n" +
+                "N'oublie surtout pas d'aller lire l'onglet <#1363949593187848343> pour être conscient des fonctionnalités du serveur !\n" +
                 "(il y a pas mal de choses à lire, donc prends ta meilleur tasse de thé et prends ton temps de tout lire :upside_down: !).";
 
         //tests embeds
