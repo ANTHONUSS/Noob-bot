@@ -1,9 +1,11 @@
 package fr.anthonus.utils;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CodeUser {
-    private long userId;
+    private final long userId;
 
     private int xp;
     private int level;
@@ -12,6 +14,9 @@ public class CodeUser {
     private int nbVoiceTimeSpent;
 
     private Instant lastMessageTime;
+
+    private final List<Long> MESSAGES_ID = new ArrayList<>();
+    private final List<String> MESSAGES_STRING = new ArrayList<>();
 
     public CodeUser(long userId, int xp, int level, int nbMessagesSent, int nbVoiceTimeSpent) {
         this.userId = userId;
@@ -54,9 +59,6 @@ public class CodeUser {
     public int getNbMessagesSent() {
         return nbMessagesSent;
     }
-    public void setNbMessagesSent(int nbMessagesSent) {
-        this.nbMessagesSent = nbMessagesSent;
-    }
     public void addNbMessageSent(int nbToAdd) {
         this.nbMessagesSent += nbToAdd;
     }
@@ -64,10 +66,30 @@ public class CodeUser {
     public int getNbVoiceTimeSpent() {
         return nbVoiceTimeSpent;
     }
-    public void setNbVoiceTimeSpent(int nbVoiceTimeSpent) {
-        this.nbVoiceTimeSpent = nbVoiceTimeSpent;
-    }
     public void addNbVoiceTimeSpent(int nbToAdd) {
         this.nbVoiceTimeSpent += nbToAdd;
+    }
+
+    public List<Long> getMessagesId() {
+        return MESSAGES_ID;
+    }
+    public int getNbMessageSentInARow() {
+        return MESSAGES_ID.size();
+    }
+    public void addMessageSentInARow(long messageID) {
+        MESSAGES_ID.add(messageID);
+    }
+    public void resetMessagesSentInARow() {
+        MESSAGES_ID.clear();
+    }
+
+    public List<String> getMessagesString() {
+        return MESSAGES_STRING;
+    }
+    public void addMessageString(String message) {
+        MESSAGES_STRING.add(message);
+    }
+    public void resetMessagesString() {
+        MESSAGES_STRING.clear();
     }
 }

@@ -21,7 +21,7 @@ public enum DefaultLogType implements LogType {
     COMMAND("COMMAND", LOGs.createAnsiCode(255, 172, 53, false, false, false)),
     WELCOME("WELCOME", LOGs.createAnsiCode(0, 143, 255, false, false, false)),
     XP("XP", LOGs.createAnsiCode(134, 55, 0, false, false, false)),
-    ADMIN("XP", LOGs.createAnsiCode(255, 139, 118, false, false, true)),;
+    ADMIN("ADMIN", LOGs.createAnsiCode(255, 139, 118, false, false, true)),;
 
     private final String name;
     private final String ansiCode;

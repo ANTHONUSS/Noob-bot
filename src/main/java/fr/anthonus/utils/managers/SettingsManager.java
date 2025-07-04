@@ -11,6 +11,7 @@ public class SettingsManager {
     public static long arrivalsChannel;
     public static long levelInfoChannel;
     public static long commandsChannel;
+    public static long logsChannel;
     public static long timeBeforeXP;
 
     public static void loadSettings() {
@@ -22,6 +23,8 @@ public class SettingsManager {
             LOGs.sendLog("Salon des annonces de niveaux chargé : " + levelInfoChannel, DefaultLogType.FILE_LOADING);
             commandsChannel = json.get("commandsChannel").getAsLong();
             LOGs.sendLog("Salon des commandes chargé : " + commandsChannel, DefaultLogType.FILE_LOADING);
+            logsChannel = json.get("logsChannel").getAsLong();
+            LOGs.sendLog("Salon des logs chargé : " + logsChannel, DefaultLogType.FILE_LOADING);
             timeBeforeXP = json.get("timeBeforeXP").getAsInt();
             LOGs.sendLog("Temps avant XP chargé : " + timeBeforeXP, DefaultLogType.FILE_LOADING);
         } catch (IOException e) {
