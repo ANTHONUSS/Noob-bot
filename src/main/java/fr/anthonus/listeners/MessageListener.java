@@ -10,8 +10,6 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
 
 public class MessageListener extends ListenerAdapter {
     private static final int MAX_MESSAGES_IN_A_ROW = 8; // Nombre maximum de messages autorisés en une seule fois
@@ -19,33 +17,16 @@ public class MessageListener extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         if (event.getAuthor().isBot()) return;
+        CodeUser codeUser = CodeUserManager.users.get(event.getAuthor().getIdLong());
 
-        boolean isAllowed = verifyMessage(event);
+        boolean isAllowed = verifySpam(event);
 
-        if (isAllowed) isAllowed = verifySpam(event);
+        if (isAllowed) isAllowed = verifyMessage(event);
 
         if (isAllowed) updateUserStats(event);
 
-    }
+        codeUser.setLastMessageTime(Instant.now());
 
-    private boolean verifyMessage(MessageReceivedEvent event) {
-        if (event.getMember().hasPermission(Permission.ADMINISTRATOR)) return true; // Les administrateurs sont exemptés de la vérification.
-
-        String content = event.getMessage().getContentRaw();
-        // Vérification des liens d'invitation Discord
-        if (content.matches("(?:https?://)?(?:www\\.)?(?:discord\\.gg|discord(app)?\\.com/invite)/[a-zA-Z0-9\\-]+")) {
-
-            event.getMessage().delete().complete();
-
-            event.getChannel().sendMessage(event.getAuthor().getAsMention() + ", Les liens d'invitation Discord ne sont pas autorisés.").queue();
-            LOGs.sendLog(event.getAuthor().getName() + " a tenté d'envoyer un lien d'invitation Discord.", DefaultLogType.ADMIN);
-            AdminManager.sendLinkLog(event.getAuthor().getIdLong(), content, event.getChannel().getIdLong());
-
-            return false;
-
-        }
-
-        return true;
     }
 
     private boolean verifySpam(MessageReceivedEvent event) {
@@ -62,19 +43,17 @@ public class MessageListener extends ListenerAdapter {
             codeUser.addMessageSentInARow(event.getMessage().getIdLong());
             codeUser.addMessageString(event.getMessage().getContentRaw());
 
-            codeUser.setLastMessageTime(Instant.now());
-
         } else {
             codeUser.resetMessagesSentInARow();
             codeUser.resetMessagesString();
             codeUser.addMessageSentInARow(event.getMessage().getIdLong());
             codeUser.addMessageString(event.getMessage().getContentRaw());
 
-            codeUser.setLastMessageTime(Instant.now());
-
         }
 
         if (codeUser.getNbMessageSentInARow() > MAX_MESSAGES_IN_A_ROW) {
+            codeUser.subtractScore(2);
+            DatabaseManager.updateScore(userId, codeUser.getScore());
             for (long messageId : codeUser.getMessagesId()) {
                 event.getChannel().retrieveMessageById(messageId).queue(
                         message -> {
@@ -83,15 +62,52 @@ public class MessageListener extends ListenerAdapter {
                         throwable -> LOGs.sendLog("Erreur lors de la suppression du message ID " + messageId + ": " + throwable.getMessage(), DefaultLogType.ERROR)
                 );
             }
-            // Mute l'utilisateur pour 15 minutes
-            event.getGuild().timeoutFor(event.getMember(), Duration.ofMinutes(15)).queue();
+            // Mute l'utilisateur pour X minutes
+            if (codeUser.getScore() <= -5){
+                event.getGuild().timeoutFor(event.getMember(), Duration.ofDays(1)).queue();
+            } else if (codeUser.getScore() <= -2) {
+                event.getGuild().timeoutFor(event.getMember(), Duration.ofHours(12)).queue();
+            } else if (codeUser.getScore() <= 1) {
+                event.getGuild().timeoutFor(event.getMember(), Duration.ofMinutes(30)).queue();
+            } else {
+                event.getGuild().timeoutFor(event.getMember(), Duration.ofMinutes(10)).queue();
+            }
 
-            event.getChannel().sendMessage(event.getAuthor().getAsMention() + ", Vous avez envoyé trop de messages en une seule fois. Vous avez été mute pendant 15 minutes.").queue();
-            LOGs.sendLog(event.getAuthor().getName() + " a envoyé trop de messages en une seule fois. Il a été mute 15 minutes.", DefaultLogType.ADMIN);
+            event.getChannel().sendMessage(event.getAuthor().getAsMention() + ", Vous avez envoyé trop de messages en une seule fois. Vous avez été mute.").queue();
+            LOGs.sendLog(event.getAuthor().getName() + " a envoyé trop de messages en une seule fois. Il a été mute.", DefaultLogType.ADMIN);
             AdminManager.sendMuteLog(codeUser, event.getChannel().getIdLong());
 
             codeUser.resetMessagesSentInARow();
             codeUser.resetMessagesString();
+
+            return false;
+        }
+
+        return true;
+    }
+
+    private boolean verifyMessage(MessageReceivedEvent event) {
+        if (event.getMember().hasPermission(Permission.ADMINISTRATOR)) return true; // Les administrateurs sont exemptés de la vérification.
+
+        String content = event.getMessage().getContentRaw();
+        // Vérification des liens d'invitation Discord
+        if (content.matches("(?:https?://)?(?:www\\.)?(?:discord\\.gg|discord(app)?\\.com/invite)/[a-zA-Z0-9\\-]+")) {
+
+            event.getMessage().delete().complete();
+
+            event.getChannel().sendMessage(event.getAuthor().getAsMention() + ", Les liens d'invitation Discord ne sont pas autorisés.").queue();
+            LOGs.sendLog(event.getAuthor().getName() + " a tenté d'envoyer un lien d'invitation Discord.", DefaultLogType.ADMIN);
+
+            CodeUser codeUser = CodeUserManager.users.get(event.getAuthor().getIdLong());
+            codeUser.subtractScore(1);
+            DatabaseManager.updateScore(event.getAuthor().getIdLong(), codeUser.getScore());
+            boolean isMuted = codeUser.getScore() < 0;
+            if (isMuted) {
+                event.getGuild().timeoutFor(event.getMember(), Duration.ofMinutes(15)).queue();
+                event.getChannel().sendMessage(event.getAuthor().getAsMention() + ", Vous avez été mute pour avoir tenté d'envoyer un lien d'invitation Discord.").queue();
+            }
+
+            AdminManager.sendLinkLog(event.getAuthor().getIdLong(), content, event.getChannel().getIdLong(), isMuted);
 
             return false;
         }
@@ -114,7 +130,5 @@ public class MessageListener extends ListenerAdapter {
 
         // ajout de l'xp
         LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_msg);
-
-        codeUser.setLastMessageTime(Instant.now());
     }
 }

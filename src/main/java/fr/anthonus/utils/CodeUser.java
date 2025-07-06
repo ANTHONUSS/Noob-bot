@@ -13,17 +13,20 @@ public class CodeUser {
     private int nbMessagesSent;
     private int nbVoiceTimeSpent;
 
+    private int score;
+
     private Instant lastMessageTime;
 
     private final List<Long> MESSAGES_ID = new ArrayList<>();
     private final List<String> MESSAGES_STRING = new ArrayList<>();
 
-    public CodeUser(long userId, int xp, int level, int nbMessagesSent, int nbVoiceTimeSpent) {
+    public CodeUser(long userId, int xp, int level, int nbMessagesSent, int nbVoiceTimeSpent, int score) {
         this.userId = userId;
         this.xp = xp;
         this.level = level;
         this.nbMessagesSent = nbMessagesSent;
         this.nbVoiceTimeSpent = nbVoiceTimeSpent;
+        this.score = score;
 
         this.lastMessageTime = Instant.MIN;
     }
@@ -68,6 +71,31 @@ public class CodeUser {
     }
     public void addNbVoiceTimeSpent(int nbToAdd) {
         this.nbVoiceTimeSpent += nbToAdd;
+    }
+
+    public int getScore() {
+        return score;
+    }
+    public void setScore(int score) {
+        if (score > 5) {
+            this.score = 5;
+        } else if (score < -5) {
+            this.score = -5;
+        } else {
+            this.score = score;
+        }
+    }
+    public void addScore(int score) {
+        this.score += score;
+        if (this.score > 5) {
+            this.score = 5;
+        }
+    }
+    public void subtractScore(int score) {
+        this.score -= score;
+        if (this.score < -5) {
+            this.score = -5;
+        }
     }
 
     public List<Long> getMessagesId() {

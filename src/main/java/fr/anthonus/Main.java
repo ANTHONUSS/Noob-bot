@@ -128,6 +128,12 @@ public class Main {
                 Commands.slash("win-reaction", "Donne le nombre d'xp à tous les utilisateurs qui ont coché une réaction au message")
                         .addOption(STRING, "message-id", "ID du message", true)
                         .addOption(INTEGER, "xp", "xp à donner", true)
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),
+
+                Commands.slash("set-user-score", "Modifie le score d'un utilisateur")
+                        .addOption(USER, "user", "Utilisateur à modifier", true)
+                        .addOptions(new OptionData(INTEGER, "score", "score de l'utilisateur", true)
+                                .setRequiredRange(-5, 5))
                         .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR))
 
         );

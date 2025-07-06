@@ -165,6 +165,14 @@ public class LevelManager {
             codeUser.setLevel(levelAfter);
             DatabaseManager.updateLevel(userId, levelAfter);
             sendLevelUpMessage(userId, levelAfter);
+
+            LOGs.sendLog(""+levelAfter, DefaultLogType.DEBUG);
+            if (levelAfter % 5 == 0) {
+                // Si l'utilisateur passe un niveau divisible par 5, on lui donne 2 points de score
+                codeUser.addScore(2);
+                DatabaseManager.updateScore(userId, codeUser.getScore());
+            }
+
             checkAndUpdateUserRole(userId, levelAfter);
         }
     }

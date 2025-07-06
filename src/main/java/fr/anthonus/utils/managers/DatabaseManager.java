@@ -21,7 +21,8 @@ public class DatabaseManager {
                     "xp INTEGER NOT NULL," +
                     "level INTEGER NOT NULL," +
                     "nbMessagesSent INTEGER NOT NULL," +
-                    "nbVoiceTimeSpent INTEGER NOT NULL" +
+                    "nbVoiceTimeSpent INTEGER NOT NULL," +
+                    "score INTEGER NOT NULL" +
                     ");";
 
             conn.createStatement().execute(createTableQuery);
@@ -37,8 +38,8 @@ public class DatabaseManager {
      * @param codeUser L'utilisateur à sauvegarder.
      */
     public static void saveUser(CodeUser codeUser){
-        String query = "INSERT INTO Users (user_id, xp, level, nbMessagesSent, nbVoiceTimeSpent) VALUES (?, ?, ?, ?, ?) " +
-                "ON CONFLICT(user_id) DO UPDATE SET xp = ?, level = ?, nbMessagesSent = ?, nbVoiceTimeSpent = ?;";
+        String query = "INSERT INTO Users (user_id, xp, level, nbMessagesSent, nbVoiceTimeSpent, score) VALUES (?, ?, ?, ?, ?, ?) " +
+                "ON CONFLICT(user_id) DO UPDATE SET xp = ?, level = ?, nbMessagesSent = ?, nbVoiceTimeSpent = ?, score = ?;";
 
         try (Connection conn = DriverManager.getConnection(DB_URL)) {
             PreparedStatement stmt = conn.prepareStatement(query);
@@ -47,11 +48,14 @@ public class DatabaseManager {
             stmt.setInt(3, codeUser.getLevel());
             stmt.setInt(4, codeUser.getNbMessagesSent());
             stmt.setInt(5, codeUser.getNbVoiceTimeSpent());
+            stmt.setInt(6, codeUser.getScore());
 
-            stmt.setInt(6, codeUser.getXp());
-            stmt.setInt(7, codeUser.getLevel());
-            stmt.setInt(8, codeUser.getNbMessagesSent());
-            stmt.setInt(9, codeUser.getNbVoiceTimeSpent());
+
+            stmt.setInt(7, codeUser.getXp());
+            stmt.setInt(8, codeUser.getLevel());
+            stmt.setInt(9, codeUser.getNbMessagesSent());
+            stmt.setInt(10, codeUser.getNbVoiceTimeSpent());
+            stmt.setInt(11, codeUser.getScore());
             stmt.executeUpdate();
 
             LOGs.sendLog("Utilisateur sauvegardé avec succès : " + jda.retrieveUserById(codeUser.getUserId()).complete().getName(), DefaultLogType.FILE_LOADING);
@@ -67,7 +71,7 @@ public class DatabaseManager {
      * @return L'utilisateur chargé, ou null s'il n'existe pas.
      */
     public static CodeUser loadUser(long userId) {
-        String query = "SELECT xp, level, nbMessagesSent, nbVoiceTimeSpent FROM Users WHERE user_id = ?;";
+        String query = "SELECT xp, level, nbMessagesSent, nbVoiceTimeSpent, score FROM Users WHERE user_id = ?;";
 
         try (Connection conn = DriverManager.getConnection(DB_URL)) {
             PreparedStatement stmt = conn.prepareStatement(query);
@@ -79,9 +83,10 @@ public class DatabaseManager {
                 int level = result.getInt("level");
                 int nbMessagesSent = result.getInt("nbMessagesSent");
                 int nbVoiceTimeSpent = result.getInt("nbVoiceTimeSpent");
+                int score = result.getInt("score");
 
 
-                return new CodeUser(userId, xp, level, nbMessagesSent, nbVoiceTimeSpent);
+                return new CodeUser(userId, xp, level, nbMessagesSent, nbVoiceTimeSpent, score);
             }
 
         } catch (SQLException e) {
@@ -166,6 +171,23 @@ public class DatabaseManager {
 
         } catch (SQLException e) {
             LOGs.sendLog("Erreur lors de la mise à jour du temps passé en voc pour l'utilisateur : " + e, DefaultLogType.ERROR);
+        }
+    }
+
+    public static void updateScore(long userId, int newScore) {
+        String query = "UPDATE Users SET score = ? WHERE user_id = ?;";
+
+        try (Connection conn = DriverManager.getConnection(DB_URL)) {
+            PreparedStatement stmt = conn.prepareStatement(query);
+            stmt.setInt(1, newScore);
+            stmt.setLong(2, userId);
+            stmt.executeUpdate();
+
+            // En commentaire parce que ça spam le log
+            LOGs.sendLog("Score mis à jour avec succès pour l'utilisateur : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
+
+        } catch (SQLException e) {
+            LOGs.sendLog("Erreur lors de la mise à jour du score pour l'utilisateur : " + e, DefaultLogType.ERROR);
         }
     }
 }

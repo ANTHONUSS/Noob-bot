@@ -1,10 +1,7 @@
 package fr.anthonus.listeners;
 
+import fr.anthonus.commands.admin.*;
 import fr.anthonus.logs.LOGs;
-import fr.anthonus.commands.admin.ClearCommand;
-import fr.anthonus.commands.admin.ReloadDataCommand;
-import fr.anthonus.commands.admin.SetXpCommand;
-import fr.anthonus.commands.admin.WinReactionCommand;
 import fr.anthonus.commands.users.LeaderBoardCommand;
 import fr.anthonus.commands.users.StatsCommand;
 import fr.anthonus.utils.managers.SettingsManager;
@@ -80,6 +77,13 @@ public class SlashCommandListener extends ListenerAdapter {
 
                 WinReactionCommand winReactionCommand = new WinReactionCommand(event, messageId, xp);
                 winReactionCommand.run();
+            }
+            case "set-user-score" -> {
+                long targetUserId = event.getOption("user").getAsUser().getIdLong();
+                int score = event.getOption("score").getAsInt();
+
+                SetUserScoreCommand setUserScoreCommand = new SetUserScoreCommand(event, targetUserId, score);
+                setUserScoreCommand.run();
             }
         }
         LOGs.sendLog("Commande terminée", DefaultLogType.COMMAND);

@@ -89,7 +89,7 @@ public class JoinEventListener extends ListenerAdapter {
         long userId = event.getUser().getIdLong();
         CodeUser codeUser = DatabaseManager.loadUser(userId);
         if (codeUser == null) {
-            codeUser = new CodeUser(userId, 0, 0, 0, 0);
+            codeUser = new CodeUser(userId, 0, 0, 0, 0, 0);
             DatabaseManager.saveUser(codeUser);
             CodeUserManager.users.put(userId, codeUser);
 
