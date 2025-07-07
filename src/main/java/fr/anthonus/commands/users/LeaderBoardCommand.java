@@ -50,7 +50,8 @@ public class LeaderBoardCommand extends Command {
                     "\n**Nombre de messages envoyés :** " + user.getNbMessagesSent() +
                     "\n**Temps passé en voc de-mute :** " + time,
                     false);
-            if (i == sortedUsers.size())
+
+            if (i != sortedUsers.size()+1)
                 embed.addBlankField(false);
         }
 

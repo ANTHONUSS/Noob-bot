@@ -17,7 +17,6 @@ public class MessageListener extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         if (event.getAuthor().isBot()) return;
-        CodeUser codeUser = CodeUserManager.users.get(event.getAuthor().getIdLong());
 
         boolean isAllowed = verifySpam(event);
 
@@ -25,7 +24,7 @@ public class MessageListener extends ListenerAdapter {
 
         if (isAllowed) updateUserStats(event);
 
-        codeUser.setLastMessageTime(Instant.now());
+
 
     }
 
@@ -39,15 +38,19 @@ public class MessageListener extends ListenerAdapter {
 
         long userId = event.getAuthor().getIdLong();
         CodeUser codeUser = CodeUserManager.users.get(userId);
-        if (Instant.now().minusSeconds(3).isBefore(codeUser.getLastMessageTime())) {
+        if (Instant.now().minusSeconds(3).isBefore(codeUser.getLastSpamMessageTime())) {
             codeUser.addMessageSentInARow(event.getMessage().getIdLong());
             codeUser.addMessageString(event.getMessage().getContentRaw());
+
+            codeUser.setLastSpamMessageTime(Instant.now());
 
         } else {
             codeUser.resetMessagesSentInARow();
             codeUser.resetMessagesString();
             codeUser.addMessageSentInARow(event.getMessage().getIdLong());
             codeUser.addMessageString(event.getMessage().getContentRaw());
+
+            codeUser.setLastSpamMessageTime(Instant.now());
 
         }
 
@@ -130,5 +133,7 @@ public class MessageListener extends ListenerAdapter {
 
         // ajout de l'xp
         LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_msg);
+
+        codeUser.setLastMessageTime(Instant.now());
     }
 }

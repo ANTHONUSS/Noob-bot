@@ -16,6 +16,7 @@ public class CodeUser {
     private int score;
 
     private Instant lastMessageTime;
+    private Instant lastSpamMessageTime;
 
     private final List<Long> MESSAGES_ID = new ArrayList<>();
     private final List<String> MESSAGES_STRING = new ArrayList<>();
@@ -29,6 +30,7 @@ public class CodeUser {
         this.score = score;
 
         this.lastMessageTime = Instant.MIN;
+        this.lastSpamMessageTime = Instant.MIN;
     }
 
     public Instant getLastMessageTime() {
@@ -36,6 +38,13 @@ public class CodeUser {
     }
     public void setLastMessageTime(Instant lastMessageTime) {
         this.lastMessageTime = lastMessageTime;
+    }
+
+    public Instant getLastSpamMessageTime() {
+        return lastSpamMessageTime;
+    }
+    public void setLastSpamMessageTime(Instant lastSpamMessageTime) {
+        this.lastSpamMessageTime = lastSpamMessageTime;
     }
 
     public long getUserId() {
