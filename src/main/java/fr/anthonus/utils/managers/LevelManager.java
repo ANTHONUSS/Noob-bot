@@ -17,14 +17,7 @@ public class LevelManager {
 
     public static int xp_per_msg = 10;
     public static int xp_per_min_voice = 10;
-    public static int maxXp = 752500;
-
-    /**
-     * Les niveaux à atteindre pour chaque palier (voir excel pour référence)
-     */
-    private static int[] paliersLevels = {0, 1, 3, 7, 16, 29, 49, 64, 79, 89, 100};
-    private static long[] paliersRoles = {1392110288953675793L, 1392110288953675794L, 1392110288953675795L, 1392110288953675796L, 1392110288970584074L, 1392110288970584075L, 1392110288970584076L,
-            1392110288970584077L, 1392110288970584078L, 1392110288970584079L, 1392110288970584080L};
+    public static int maxXp = 747500;
 
     public static int getXPforLevel(int level) {
         return a * level * level + b * level;
@@ -50,9 +43,9 @@ public class LevelManager {
     }
 
     public static int getLevelsForNextPalier(int level) {
-        for (int i = 0; i < paliersLevels.length; i++) {
-            if (level < paliersLevels[i]) {
-                return paliersLevels[i] - level;
+        for (int i = 0; i < SettingsManager.paliersLevels.length; i++) {
+            if (level < SettingsManager.paliersLevels[i]) {
+                return SettingsManager.paliersLevels[i] - level;
             }
         }
         return -1;
@@ -61,9 +54,9 @@ public class LevelManager {
     public static void checkAndUpdateUserRole(long userId, int userLevel) {
         // Trouver le rôle correspondant au niveau de l'utilisateur
         Role correctRole = null;
-        for (int i = 0; i < paliersLevels.length; i++) {
-            if (userLevel >= paliersLevels[i]) {
-                correctRole = guild.getRoleById(paliersRoles[i]);
+        for (int i = 0; i < SettingsManager.paliersLevels.length; i++) {
+            if (userLevel >= SettingsManager.paliersLevels[i]) {
+                correctRole = guild.getRoleById(SettingsManager.paliersRoles[i]);
             } else {
                 break;
             }
@@ -76,7 +69,7 @@ public class LevelManager {
 
         Member member = guild.getMemberById(userId);
         // Vérifier si l'utilisateur a déjà le rôle correct
-        for (long roleId : paliersRoles) {
+        for (long roleId : SettingsManager.paliersRoles) {
             Role role = guild.getRoleById(roleId);
             if (role != null && member.getRoles().contains(role)) {
                 if (role.getIdLong() == correctRole.getIdLong()) {
@@ -89,7 +82,7 @@ public class LevelManager {
         guild.addRoleToMember(member, correctRole).queue();
 
         // Supprimer tous les autres rôles de palier de l'utilisateur
-        for (long roleId : paliersRoles) {
+        for (long roleId : SettingsManager.paliersRoles) {
             Role role = guild.getRoleById(roleId);
             if (role != null && member.getRoles().contains(role) && role.getIdLong() != correctRole.getIdLong()) {
                 guild.removeRoleFromMember(member, role).queue();
@@ -97,7 +90,7 @@ public class LevelManager {
         }
 
         // Envoyer un message de félicitations
-        if (correctRole.getIdLong() != paliersRoles[0])
+        if (correctRole.getIdLong() != SettingsManager.paliersRoles[0])
             sendPalierChangeMessage(userId, correctRole);
 
         LOGs.sendLog("L'utilisateur " + jda.retrieveUserById(userId).complete().getName() + " est monté au palier " + correctRole.getName(), DefaultLogType.XP);
@@ -135,9 +128,9 @@ public class LevelManager {
     }
 
     public static Role getPalier(int level) {
-        for (int i = 0; i < paliersLevels.length; i++) {
-            if (level >= paliersLevels[i] && (i == paliersLevels.length - 1 || level < paliersLevels[i + 1])) {
-                return guild.getRoleById(paliersRoles[i]);
+        for (int i = 0; i < SettingsManager.paliersLevels.length; i++) {
+            if (level >= SettingsManager.paliersLevels[i] && (i == SettingsManager.paliersLevels.length - 1 || level < SettingsManager.paliersLevels[i + 1])) {
+                return guild.getRoleById(SettingsManager.paliersRoles[i]);
             }
         }
 

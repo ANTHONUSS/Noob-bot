@@ -7,8 +7,6 @@ import java.time.Duration;
 import static fr.anthonus.Main.guild;
 
 public class AdminManager {
-    private static final String pingAdmins = "<@&1392110288970584083> | <@&1392110288970584082> | <@&1392110288970584081>";
-
     public static void sendMuteLog(CodeUser codeUser, long channelId) {
         StringBuilder logMessage = new StringBuilder();
 
@@ -29,7 +27,7 @@ public class AdminManager {
             logMessage.append("10 minutes");
         }
         logMessage.append("`\n");
-        logMessage.append(pingAdmins);
+        logMessage.append(SettingsManager.pingAdmins);
 
         guild.getTextChannelById(SettingsManager.logsChannel).sendMessage(logMessage.toString()).queue();
 
@@ -50,7 +48,7 @@ public class AdminManager {
             logMessage.append(duration.getSeconds()).append(" secondes");
         }
         logMessage.append("`\n");
-        logMessage.append(pingAdmins);
+        logMessage.append(SettingsManager.pingAdmins);
 
         guild.getTextChannelById(SettingsManager.logsChannel).sendMessage(logMessage.toString()).queue();
 
@@ -67,7 +65,7 @@ public class AdminManager {
         } else {
             logMessage.append("## L'utilisateur n'a pas été mute.\n");
         }
-        logMessage.append(pingAdmins);
+        logMessage.append(SettingsManager.pingAdmins);
 
         guild.getTextChannelById(SettingsManager.logsChannel).sendMessage(logMessage.toString()).queue();
 
