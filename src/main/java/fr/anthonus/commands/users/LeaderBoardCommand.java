@@ -25,7 +25,7 @@ public class LeaderBoardCommand extends Command {
     public void run() {
         List<CodeUser> sortedUsers = new ArrayList<>(CodeUserManager.users.values());
         sortedUsers.sort((user1, user2) -> Integer.compare(user2.getXp(), user1.getXp()));
-        sortedUsers = sortedUsers.subList(0, Math.min(sortedUsers.size(), 10));
+        sortedUsers = sortedUsers.subList(0, Math.min(sortedUsers.size(), 5));
 
         EmbedBuilder embed = new EmbedBuilder();
         embed.setTitle(":trophy: Leaderboard :trophy:");
@@ -33,26 +33,22 @@ public class LeaderBoardCommand extends Command {
         for (CodeUser user : sortedUsers) {
             String userName = jda.retrieveUserById(user.getUserId()).complete().getName();
 
-            String time;
-            int minutes = user.getNbVoiceTimeSpent();
-            if (minutes < 60) {
-                time = minutes + " minute(s)";
-            } else {
-                int hours = minutes / 60;
-                int remainingMinutes = minutes % 60;
-                time = hours + " heure(s) " + (remainingMinutes > 0 ? remainingMinutes + " minute(s)" : "");
+            String rankEmoji;
+            switch (i) {
+                case 1 -> rankEmoji = ":first_place:";
+                case 2 -> rankEmoji = ":second_place:";
+                case 3 -> rankEmoji = ":third_place:";
+                case 4 -> rankEmoji = ":four:";
+                case 5 -> rankEmoji = ":five:";
+                default -> rankEmoji = ":medal:";
             }
 
-            embed.addField(i++ +". " + userName,
-                    "**XP :** " + user.getXp() +
-                    "\n**Niveau :** " + user.getLevel() +
-                    "\n**Palier :** " + LevelManager.getPalier(user.getLevel()).getName() +
-                    "\n**Nombre de messages envoyés :** " + user.getNbMessagesSent() +
-                    "\n**Temps passé en voc de-mute :** " + time,
-                    false);
+            embed.addField("**" + rankEmoji + userName + "**",
+                    ":arrow_right: **Niveau **" + LevelManager.getLevelFromXP(user.getXp()) + " | (" + user.getXp() + " XP)",
+                    false
+            );
 
-            if (i != sortedUsers.size()+1)
-                embed.addBlankField(false);
+            i++;
         }
 
         currentEvent.replyEmbeds(embed.build()).queue();
