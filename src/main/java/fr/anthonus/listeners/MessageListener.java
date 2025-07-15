@@ -70,7 +70,7 @@ public class MessageListener extends ListenerAdapter {
                 event.getGuild().timeoutFor(event.getMember(), Duration.ofDays(1)).queue();
             } else if (codeUser.getScore() <= -2) {
                 event.getGuild().timeoutFor(event.getMember(), Duration.ofHours(12)).queue();
-            } else if (codeUser.getScore() <= 1) {
+            } else if (codeUser.getScore() <= 0) {
                 event.getGuild().timeoutFor(event.getMember(), Duration.ofMinutes(30)).queue();
             } else {
                 event.getGuild().timeoutFor(event.getMember(), Duration.ofMinutes(10)).queue();
