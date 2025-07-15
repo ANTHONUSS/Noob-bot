@@ -45,26 +45,39 @@ public class StatsCommand extends Command {
         String time;
         int minutes = codeUser.getNbVoiceTimeSpent();
         if (minutes < 60) {
-            time = minutes + " minute(s)";
+            if (minutes == 0) {
+                time = "Aucun temps passé en voc";
+            } else if (minutes == 1) {
+                time = "1 minute";
+            } else {
+                time = minutes + " minute(s)";
+            }
         } else {
             int hours = minutes / 60;
             int remainingMinutes = minutes % 60;
-            time = hours + " heure(s) " + (remainingMinutes > 0 ? remainingMinutes + " minute(s)" : "");
+            String hourString = (hours == 1) ? " heure " : " heures ";
+            String minuteString = (remainingMinutes == 1) ? " minute" : " minutes";
+            time = hours + hourString + (remainingMinutes > 0 ? remainingMinutes + minuteString : "");
         }
+
+        StringBuilder fieldContentBuilder = new StringBuilder();
+        if (codeUser.getXp() < LevelManager.maxXp) {
+            fieldContentBuilder.append("**:face_with_monocle: XP pour le prochain niveau : **")
+                    .append(LevelManager.getXPForLevelUp(codeUser.getXp())).append("\n");
+            fieldContentBuilder.append("**:up: Nombre de niveaux pour le prochain palier : **")
+                    .append(LevelManager.getLevelsForNextPalier(codeUser.getLevel())).append("\n");
+        }
+        fieldContentBuilder.append("**:speech_balloon: Nombre de messages envoyés : **")
+                .append(codeUser.getNbMessagesSent()).append(" messages\n");
+        fieldContentBuilder.append("**:loud_sound: Temps passé en voc : **").append(time);
 
         EmbedBuilder embed = new EmbedBuilder();
         embed.setTitle("Statistiques de " + name);
-        embed.addField("XP", String.valueOf(codeUser.getXp()), true);
-        embed.addField("Niveau", String.valueOf(codeUser.getLevel()), true);
-        embed.addField("Palier actuel", LevelManager.getPalier(codeUser.getLevel()).getName(), true);
+        embed.addField("", "**:chart_with_upwards_trend: XP : **" + codeUser.getXp(), true);
+        embed.addField("", "**:trophy: Niveau : **" + codeUser.getLevel(), true);
+        embed.addField("", "**:medal: Palier actuel : **<@&" + LevelManager.getPalier(codeUser.getLevel()).getIdLong() + ">", true);
 
-        if (codeUser.getXp() < LevelManager.maxXp) {
-            embed.addField("XP pour le prochain niveau", String.valueOf(LevelManager.getXPForLevelUp(codeUser.getXp())), false);
-            embed.addField("Nombre de niveaux pour le prochain palier", String.valueOf(LevelManager.getLevelsForNextPalier(codeUser.getLevel())), false);
-        }
-
-        embed.addField("Nombre de messages envoyés", String.valueOf(codeUser.getNbMessagesSent()), false);
-        embed.addField("Temps passé en voc de-mute", time, false);
+        embed.addField("", fieldContentBuilder.toString(), false);
 
         currentEvent.replyEmbeds(embed.build()).queue();
     }

@@ -44,7 +44,7 @@ public class LeaderBoardCommand extends Command {
             }
 
             embed.addField("**" + rankEmoji + userName + "**",
-                    ":arrow_right: **Niveau **" + LevelManager.getLevelFromXP(user.getXp()) + " | (" + user.getXp() + " XP)",
+                    ":arrow_right: **Niveau " + LevelManager.getLevelFromXP(user.getXp()) + "** | (" + user.getXp() + " XP)",
                     false
             );
 
