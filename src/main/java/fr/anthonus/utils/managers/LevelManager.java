@@ -23,8 +23,8 @@ public class LevelManager {
      * Les niveaux à atteindre pour chaque palier (voir excel pour référence)
      */
     private static int[] paliersLevels = {0, 2, 5, 8, 20, 29, 49, 64, 79, 89, 100};
-    private static long[] paliersRoles = {1364222563546566696L, 1363255586464076036L, 1363258951021625404L, 1363258861607452900L, 1363258980515840210L, 1363259013277417572L, 1363259050497802365L,
-            1363259085163860110L, 1363259115677421729L, 1363259148585795806L, 1363259177828487310L};
+    private static long[] paliersRoles = {1392110288953675793L, 1392110288953675794L, 1392110288953675795L, 1392110288953675796L, 1392110288970584074L, 1392110288970584075L, 1392110288970584076L,
+            1392110288970584077L, 1392110288970584078L, 1392110288970584079L, 1392110288970584080L};
 
     public static int getXPforLevel(int level) {
         return 75 * level * level + 25 * level;
@@ -174,5 +174,11 @@ public class LevelManager {
 
             checkAndUpdateUserRole(userId, levelAfter);
         }
+    }
+
+    public static void verifyLevel(CodeUser codeUser) {
+        long userId = codeUser.getUserId();
+
+        checkAndUpdateUserRole(userId, codeUser.getLevel());
     }
 }

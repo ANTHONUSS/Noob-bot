@@ -40,6 +40,8 @@ public class CodeUserManager {
                     users.put(userId, codeUser);
                     LOGs.sendLog("Utilisateur chargé : " + jda.retrieveUserById(userId).complete().getName(), DefaultLogType.FILE_LOADING);
                 }
+
+                LevelManager.verifyLevel(codeUser);
             }
             LOGs.sendLog("Tous les utilisateurs ont été chargés", DefaultLogType.LOADING);
 
