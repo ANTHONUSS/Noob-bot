@@ -13,7 +13,7 @@ import static fr.anthonus.Main.*;
 
 public class LevelManager {
     private static int a = 75;
-    private static int b = 25;
+    private static int b = -25;
 
     public static int xp_per_msg = 10;
     public static int xp_per_min_voice = 10;
@@ -22,12 +22,12 @@ public class LevelManager {
     /**
      * Les niveaux à atteindre pour chaque palier (voir excel pour référence)
      */
-    private static int[] paliersLevels = {0, 2, 5, 8, 20, 29, 49, 64, 79, 89, 100};
+    private static int[] paliersLevels = {0, 1, 3, 7, 16, 29, 49, 64, 79, 89, 100};
     private static long[] paliersRoles = {1392110288953675793L, 1392110288953675794L, 1392110288953675795L, 1392110288953675796L, 1392110288970584074L, 1392110288970584075L, 1392110288970584076L,
             1392110288970584077L, 1392110288970584078L, 1392110288970584079L, 1392110288970584080L};
 
     public static int getXPforLevel(int level) {
-        return 75 * level * level + 25 * level;
+        return a * level * level + b * level;
     }
 
     public static int getLevelFromXP(int xp) {
