@@ -14,6 +14,8 @@ import net.dv8tion.jda.api.events.guild.member.GuildMemberRemoveEvent;
 import net.dv8tion.jda.api.events.guild.member.update.GuildMemberUpdatePendingEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.logging.Level;
+
 import fr.anthonus.logs.logTypes.*;
 
 import static fr.anthonus.Main.*;

@@ -2,10 +2,12 @@ package fr.anthonus.utils.managers;
 
 import fr.anthonus.utils.CodeUser;
 
+import java.time.Duration;
+
 import static fr.anthonus.Main.guild;
 
 public class AdminManager {
-    private static final String pingAdmins = "<@&1363254838288318794> | <@&1363254575426965556> | <@&1363255271836614909>";
+    private static final String pingAdmins = "<@&1392110288970584083> | <@&1392110288970584082> | <@&1392110288970584081>";
 
     public static void sendMuteLog(CodeUser codeUser, long channelId) {
         StringBuilder logMessage = new StringBuilder();
@@ -25,6 +27,27 @@ public class AdminManager {
             logMessage.append("45 minutes");
         } else {
             logMessage.append("10 minutes");
+        }
+        logMessage.append("`\n");
+        logMessage.append(pingAdmins);
+
+        guild.getTextChannelById(SettingsManager.logsChannel).sendMessage(logMessage.toString()).queue();
+
+    }
+
+    public static void sendMuteLog(CodeUser codeUser, Duration duration) {
+        StringBuilder logMessage = new StringBuilder();
+
+        logMessage.append("# L'utilisateur <@").append(codeUser.getUserId()).append("> a été muté pour spam.\n");
+        logMessage.append("## Mute pendant : `");
+        if(duration.toHours() > 24) {
+            logMessage.append(duration.toDays()).append(" jours");
+        } else if (duration.toMinutes() > 60) {
+            logMessage.append(duration.toHours()).append(" heures");
+        } else if (duration.toSeconds() > 60) {
+            logMessage.append(duration.toMinutes()).append(" minutes");
+        } else {
+            logMessage.append(duration.getSeconds()).append(" secondes");
         }
         logMessage.append("`\n");
         logMessage.append(pingAdmins);

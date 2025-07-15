@@ -38,31 +38,33 @@ public class SlashCommandListener extends ListenerAdapter {
                     targetUserId = event.getOption("user").getAsUser().getIdLong();
                 }
 
-                StatsCommand statsCommand = new StatsCommand(event, targetUserId);
-                statsCommand.run();
+                new StatsCommand(event, targetUserId).run();
             }
             case "leaderboard" -> {
-                LeaderBoardCommand leaderBoardCommand = new LeaderBoardCommand(event);
-                leaderBoardCommand.run();
+                new LeaderBoardCommand(event).run();
             }
 
             //ADMIN COMMANDS
             case "reload-data" -> {
-                ReloadDataCommand reloadDataCommand = new ReloadDataCommand(event);
-                reloadDataCommand.run();
+                new ReloadDataCommand(event).run();
+            }
+            case "mute" -> {
+                long targerUserId = event.getOption("utilisateur").getAsUser().getIdLong();
+                int duration = event.getOption("durée").getAsInt();
+                String unit = event.getOption("unité").getAsString();
+
+                new MuteCommand(event, targerUserId, duration, unit).run();
+            }
+            case "clear" -> {
+                int count = event.getOption("nombre").getAsInt();
+
+                new ClearCommand(event, count).run();
             }
             case "set-xp" -> {
                 long targetUserId = event.getOption("user").getAsUser().getIdLong();
                 int xp = event.getOption("xp").getAsInt();
 
-                SetXpCommand setXpCommand = new SetXpCommand(event, targetUserId, xp);
-                setXpCommand.run();
-            }
-            case "clear" -> {
-                int count = event.getOption("nombre").getAsInt();
-
-                ClearCommand clearCommand = new ClearCommand(event, count);
-                clearCommand.run();
+                new SetXpCommand(event, targetUserId, xp).run();
             }
             case "win-reaction" -> {
                 long messageId;
@@ -75,15 +77,13 @@ public class SlashCommandListener extends ListenerAdapter {
                 int xp = event.getOption("xp").getAsInt();
 
 
-                WinReactionCommand winReactionCommand = new WinReactionCommand(event, messageId, xp);
-                winReactionCommand.run();
+                new WinReactionCommand(event, messageId, xp).run();
             }
             case "set-user-score" -> {
                 long targetUserId = event.getOption("user").getAsUser().getIdLong();
                 int score = event.getOption("score").getAsInt();
 
-                SetUserScoreCommand setUserScoreCommand = new SetUserScoreCommand(event, targetUserId, score);
-                setUserScoreCommand.run();
+                new SetUserScoreCommand(event, targetUserId, score).run();
             }
         }
         LOGs.sendLog("Commande terminée", DefaultLogType.COMMAND);

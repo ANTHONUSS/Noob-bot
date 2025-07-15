@@ -115,15 +115,25 @@ public class Main {
                 Commands.slash("reload-data", "Recharge les données du bot")
                         .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),
 
+                Commands.slash("mute", "Mute un utilisateur pour une durée déterminée")
+                        .addOption(USER, "utilisateur", "Utilisateur à mute", true)
+                        .addOptions(new OptionData(INTEGER, "durée", "Durée du mute", true))
+                        .addOptions(new OptionData(STRING, "unité", "Unité de la durée", true)
+                                .addChoice("Minutes", "minutes")
+                                .addChoice("Heures", "heures")
+                                .addChoice("Jours", "jours"))
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),
+
+                Commands.slash("clear", "Supprime un certain nombre de messages du salon.")
+                        .addOptions(new OptionData(INTEGER, "nombre", "nombre de messages à supprimer", true)
+                                .setRequiredRange(1, 100))
+                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.MESSAGE_MANAGE)),
+
                 Commands.slash("set-xp", "Donne de l'xp à un utilisateur")
                         .addOption(USER, "user", "Utilisateur à qui donner de l'xp", true)
                         .addOptions(new OptionData(INTEGER, "xp", "xp à donner", true)
                                 .setRequiredRange(0, 752_500))
                         .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),
-                Commands.slash("clear", "Supprime un certain nombre de messages du salon.")
-                        .addOptions(new OptionData(INTEGER, "nombre", "nombre de messages à supprimer", true)
-                                .setRequiredRange(1, 100))
-                        .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.MESSAGE_MANAGE)),
 
                 Commands.slash("win-reaction", "Donne le nombre d'xp à tous les utilisateurs qui ont coché une réaction au message")
                         .addOption(STRING, "message-id", "ID du message", true)
@@ -133,8 +143,9 @@ public class Main {
                 Commands.slash("set-user-score", "Modifie le score d'un utilisateur")
                         .addOption(USER, "user", "Utilisateur à modifier", true)
                         .addOptions(new OptionData(INTEGER, "score", "score de l'utilisateur", true)
-                                .setRequiredRange(-5, 5))
+                                        .setRequiredRange(-5, 5))
                         .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR))
+
 
         );
         commands.queue();
