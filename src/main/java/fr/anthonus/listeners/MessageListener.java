@@ -130,7 +130,7 @@ public class MessageListener extends ListenerAdapter {
         }
 
         // ajout de l'xp
-        LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_msg);
+        LevelManager.addXpAndVerifyLevel(codeUser, LevelManager.xp_per_msg);
 
         codeUser.setLastMessageTime(Instant.now());
     }

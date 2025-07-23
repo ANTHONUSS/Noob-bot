@@ -119,7 +119,7 @@ public class VoiceListener extends ListenerAdapter {
                     codeUser.addNbVoiceTimeSpent(1);
                     DatabaseManager.updateNbVoiceTimeSpent(codeUser.getUserId(), codeUser.getNbVoiceTimeSpent());
 
-                    LevelManager.addXpAndVerify(codeUser, LevelManager.xp_per_min_voice);
+                    LevelManager.addXpAndVerifyLevel(codeUser, LevelManager.xp_per_min_voice);
                 }
                 LOGs.sendLog("XP donné à tous les utilisateurs actifs du salon vocal " + voiceChannelName, DefaultLogType.XP);
             } else {

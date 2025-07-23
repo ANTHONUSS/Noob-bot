@@ -28,6 +28,8 @@ public class JoinEventListener extends ListenerAdapter {
         sendWelcomeMessage(event);
 
         addUserToDatabase(event);
+
+        LevelManager.verifyLevel(CodeUserManager.users.get(event.getUser().getIdLong()));
     }
 
     @Override
@@ -37,18 +39,6 @@ public class JoinEventListener extends ListenerAdapter {
         sendGoodbyeMessage(event);
 
         removeUserFromMemory(event);
-    }
-
-    @Override
-    public void onGuildMemberUpdatePending(GuildMemberUpdatePendingEvent event) {
-        if (!event.getNewPending()) {
-            // L'utilisateur a accepté les règles et est maintenant un membre actif
-            // Vous pouvez maintenant accéder à ses rôles et autres informations
-            long userId = event.getUser().getIdLong();
-            int userLevel = CodeUserManager.users.get(userId).getLevel();
-            LevelManager.checkAndUpdateUserRole(userId, userLevel);
-            LOGs.sendLog("L'utilisateur " + event.getUser().getName() + " a accepté les règles et est maintenant un membre actif.", DefaultLogType.WELCOME);
-        }
     }
 
     private void sendWelcomeMessage(GuildMemberJoinEvent event) {

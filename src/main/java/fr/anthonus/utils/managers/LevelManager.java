@@ -137,7 +137,7 @@ public class LevelManager {
         return null;
     }
 
-    public static void addXpAndVerify(CodeUser codeUser, int xp) {
+    public static void addXpAndVerifyLevel(CodeUser codeUser, int xp) {
         // Vérification si l'utilisateur a déjà atteint le maximum d'XP
         if (codeUser.getXp() >= maxXp) {
             return;

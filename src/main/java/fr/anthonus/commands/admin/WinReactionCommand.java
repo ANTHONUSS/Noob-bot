@@ -42,7 +42,7 @@ public class WinReactionCommand extends Command {
                         if (!userList.contains(codeUser)) {
                             LOGs.sendLog("Ajout de " + xp + " XP à " + voter.getName() + " pour avoir voté.", DefaultLogType.XP);
                             userList.add(codeUser);
-                            LevelManager.addXpAndVerify(codeUser, xp);
+                            LevelManager.addXpAndVerifyLevel(codeUser, xp);
                         }
 
                     }
