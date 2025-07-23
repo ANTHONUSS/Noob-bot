@@ -24,8 +24,6 @@ public class MessageListener extends ListenerAdapter {
 
         if (isAllowed) updateUserStats(event);
 
-
-
     }
 
     private boolean verifySpam(MessageReceivedEvent event) {

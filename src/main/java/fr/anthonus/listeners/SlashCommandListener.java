@@ -18,8 +18,10 @@ public class SlashCommandListener extends ListenerAdapter {
 
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
-        TextChannel commandChannel = guild.getTextChannelById(SettingsManager.commandsChannel);
-        if (!event.getChannel().equals(commandChannel) && !event.getMember().hasPermission(Permission.ADMINISTRATOR)) {
+        long commandChannelId = SettingsManager.commandsChannel;
+        long actualChannelId = event.getChannel().getIdLong();
+
+        if (actualChannelId != commandChannelId && !event.getMember().hasPermission(Permission.ADMINISTRATOR)) {
             event.reply("Veuillez utiliser les commandes dans le salon <#" + SettingsManager.commandsChannel + ">.").setEphemeral(true).queue();
             return;
         }
