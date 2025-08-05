@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'fr.anthonus'
-version = '1.1.2'
+version = file('src/main/resources/version.txt').text.trim()
 
 repositories {
     mavenCentral()

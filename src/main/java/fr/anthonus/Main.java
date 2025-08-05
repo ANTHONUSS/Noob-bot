@@ -21,6 +21,8 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
 
+import java.util.Scanner;
+
 import static net.dv8tion.jda.api.interactions.commands.OptionType.*;
 
 public class Main {
@@ -32,6 +34,30 @@ public class Main {
 
 
     public static void main(String[] args) throws InterruptedException {
+        init();
+
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            String input = scanner.nextLine();
+            switch (input) {
+                case "exit" -> {
+                    LOGs.sendLog("Arrêt du bot...", DefaultLogType.LOADING);
+                    jda.shutdownNow();
+
+                    System.exit(0);
+                }
+                case "reload" -> {
+                    LOGs.sendLog("Rechargement du bot...", DefaultLogType.LOADING);
+                    jda.shutdown();
+
+                    init();
+                    LOGs.sendLog("Bot rechargé", DefaultLogType.LOADING);
+                }
+            }
+        }
+    }
+
+    private static void init() throws InterruptedException {
         Dotenv dotenv = Dotenv.configure()
                 .directory("conf")
                 .load();
@@ -80,7 +106,6 @@ public class Main {
 
         LOGs.sendLog("Chargement des utilisateurs...", DefaultLogType.LOADING);
         CodeUserManager.loadUsers();
-
     }
 
     private static void initBot() throws InterruptedException {

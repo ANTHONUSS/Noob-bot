@@ -2,6 +2,8 @@ package fr.anthonus.utils.managers;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -55,5 +57,14 @@ public class SettingsManager {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static String getVersion() {
+        try (InputStream in = SettingsManager.class.getClassLoader().getResourceAsStream("version.txt")) {
+            if (in != null) {
+                return new String(in.readAllBytes(), StandardCharsets.UTF_8).trim();
+            }
+        } catch (IOException ignored) {}
+        return "unknown";
     }
 }
