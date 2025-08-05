@@ -136,6 +136,8 @@ public class Main {
 
                 Commands.slash("leaderboard", "Affiche le classement des 10 premiers utilisateurs du serveur"),
 
+                Commands.slash("info", "Affiche les informations du bot"),
+
                 //ADMIN COMMANDS
                 Commands.slash("reload-data", "Recharge les données du bot")
                         .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR)),

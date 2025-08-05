@@ -1,6 +1,7 @@
 package fr.anthonus.listeners;
 
 import fr.anthonus.commands.admin.*;
+import fr.anthonus.commands.users.InfoCommand;
 import fr.anthonus.logs.LOGs;
 import fr.anthonus.commands.users.LeaderBoardCommand;
 import fr.anthonus.commands.users.StatsCommand;
@@ -44,6 +45,9 @@ public class SlashCommandListener extends ListenerAdapter {
             }
             case "leaderboard" -> {
                 new LeaderBoardCommand(event).run();
+            }
+            case "info" -> {
+                new InfoCommand(event).run();
             }
 
             //ADMIN COMMANDS
